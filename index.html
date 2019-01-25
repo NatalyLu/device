@@ -6,7 +6,232 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main_header">
+      <nav class="main_nav">
+        <a class="header_logo">
+            <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
+        </a>
+        <ul class="user_nav">
+<!-- Может быть не стоит задавать классы всем элементам навигации?(<li>) -->
+          <li class="search">Поиск</li>
+          <li class="login">Войти</li>
+          <li class="compare">
+            <a href="compare.html">Сравнить</a>
+          </li>
+          <li class="basket">
+            <a href="basket.html">
+              Корзина
+            </a>
+          </li>
+        </ul>
+        <ul class="site_nav">
+          <li> <a href="catalog.html">Каталог товаров</a> </li>
+          <li> <a href="delivery.html">Доставка</a> </li>
+          <li> <a href="garanty.html">Гарантия</a> </li>
+          <li> <a href="contacts.html">Контакты</a> </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="container">
+      <h1 class="visually_hidden">Дивайс - онлайн магазин гаджетов</h1>
+<!-- ------------------------------------- -->
+<!--------------- Реклама ------------------->
+<!-- ------------------------------------- -->
+      <section class="main_advertising">
+        <h2 class="visually_hidden">Реклама</h2>
+        <ul>
+          <li class="var_1">
+            <a href="item1.html">
+              <p class="like_h2">Делай селфи, как Бен Стиллер!</p>
+              <img src="img/products/selfi/item.jpg" width="384" height="486" alt="Изображение самой длинной селфи-палки">
+              <p class="content">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <span class="crossed_out">
+                Подробнее
+              </span>
+            </a> 
+            <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
+            <div>8,5 м  5 кг Карбон</div>
+            <div class="content">Длина палки Вес палки Материал</div>
+          </li>
+          <li class="var_2"></li>
+          <li class="var_3"></li>
+        </ul>
+      </section>
+<!-- ------------------------------------- -->
+<!---------------- Меню --------------------->
+<!-- ------------------------------------- -->
+      <section class="main_menu"> 
+        <h2 class="visually_hidden">Основное меню</h2>     
+        <ul class="main_menu_text">
+          <li>
+            <a href="virtual.html">
+              <img src="img/products/svg/vertual.svg" width="40" height="20" alt="Очки виртуальной реальности">
+              Виртуальная реальность
+            </a>
+          </li>
+          <li>
+            <a href="monopods.html">
+              <img src="img/products/svg/monopods.svg" width="40" height="20" alt="Монопод">
+              Моноподы для селфи
+            </a>
+          </li>
+          <li>
+            <a href="camera.html">
+              <img src="img/products/svg/camera.svg" width="40" height="20" alt="Камера">
+              Экш-камеры
+            </a>
+          </li>
+          <li>
+            <a href="bracelets.html">
+              <img src="img/products/svg/bracelets.svg" width="40" height="20" alt="Браслет">
+              Фитнес-браслеты
+            </a>
+          </li>
+          <li>
+            <a href="watch.html">
+              <img src="img/products/svg/watch.svg" width="40" height="20" alt="Часы">
+              Умные часы
+            </a>
+          </li>
+          <li>
+            <a href="quadcopter.html">
+              <img src="img/products/svg/quadcopter.svg" width="40" height="20" alt="Квадрокоптер">
+              Квадрокоптеры
+            </a>
+          </li>
+        </ul>   
+      </section>
+<!-- ------------------------------------- -->
+<!-------------- Доставка ------------------->
+<!-- ------------------------------------- -->
+      <section class="main_delivery"> 
+        <h2 class="visually_hidden">Услуги</h2> 
+        <ul class="services">
+          <li>
+            <a href="delivery.html">
+              <span class="crossed_out">Доставка</span>
+            </a>
+<!-- ?????????????????????????????????????????????????????? -->
+<!-- Текст и картинка, представленные ниже это тоже ссылка?
+или это выплывающая "подсказка" -->
+            <p class="like_h2">Доставка</p>
+            <img src="img/products/svg/deliveryman.svg" width="50" height="100" alt="Доставщик">
+            <p class="content">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! 
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </li>
+          <li>
+            <a href="garanty.html">
+              <span class="crossed_out">Гарантия</span>
+            </a>
+            <p class="like_h2">Гарантия</p>
+            <img src="img/products/svg/guarantee.svg" width="50" height="100" alt="Гарантия">
+          </li>
+          <li>
+            <a href="credit.html">
+              <span class="crossed_out">Кредит</span>
+            </a>
+            <p class="like_h2">Кредит</p>
+            <img src="img/products/svg/credit.svg" width="50" height="100" alt="Кредит">
+          </li>
+        </ul>
+      </section>
+<!-- ------------------------------------- -->
+<!---------- Спонсоры/Партнеры -------------->
+<!-- ------------------------------------- -->
+      <section class="main_partners"> 
+        <h2 class="visually_hidden">Спонсоры</h2>
+        <img src="img/partners/dji.png" width="50" height="100" alt="DJI">
+        <!-- Добавить партнеров -->
+      </section>
+<!-- ------------------------------------- -->
+<!--------------- О нас --------------------->
+<!-- ------------------------------------- -->
+      <section class="main_about_us"> 
+        <h2>О нас</h2>
+        <p class="content">
+          Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.
+        </p>
+        <p class="content">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul class="transport_companies">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="about_us.html">
+          <span class="crossed_out">Подробне о нас </span>
+        </a>
+      </section>
+<!-- ------------------------------------- -->
+<!-------------- Контакты ------------------->
+<!-- ------------------------------------- -->
+      <section class="main_contacts">  
+        <h2>Контакты</h2>
+        <p class="content">
+          Вы можете забрать товар сами, заехав в наш офис.
+          Заодно, вы сможете проверить работоспоссобность покупки. Всякое бывает.
+        </p>
+        <img src="img/map.jpg" width="300" height="100" alt="Карта">
+        <a class="crossed_out" href="write_to_us.html">
+          <span class="crossed_out">Напишите нам </span>
+        </a>       
+      </section>
+    </main>
+<!-- ------------------------------------- -->
+<!--------------- Подвал -------------------->
+<!-- ------------------------------------- -->
+    <footer class="main-footer">
+      <nav class="footer_nav">
+        <a class="footer_logo">
+          <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
+        </a>
+        <ul class="footer_user_nav">
+          <li class="login">Войти</li>
+          <li class="compare">
+            <a href="compare.html">Сравнить</a>
+          </li>
+          <li class="basket">
+            <a href="basket.html">Корзина</a>
+          </li>
+        </ul>
+        <ul class="footer_nav">
+          <li> <a href="delivery.html">Доставка</a> </li>
+          <li> <a href="garanty.html">Гарантия</a> </li>
+          <li> <a href="contacts.html">Контакты</a> </li>
+        </ul>
+      </nav>
+<!-- можно ли использовать тег <address>? -->
+      <address class="content">
+        <span>г. Москва, ул. Строителей, 15</span>
+        <span>Тел.+7(495)495-95-95</span>
+      </address>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Твитер</a>
+          </li>
+        </ul> 
+      </div>
+      <div class="footer-copyright">
+        <b class="visually_hidden">Разработано:</b> 
+        <a href="https://htmlacademy.ru">
+          <img src="img/html_academy.jpg" width="20" height="30" alt="HTML Academy">  
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
