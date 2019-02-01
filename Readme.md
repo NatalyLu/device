@@ -1,8 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Наталья Лукашина](https://up.htmlacademy.ru/htmlcss/24/user/814025).
-* Наставник: `Роман Кунин`
-(https://up.htmlacademy.ru/htmlcss/24/user/497465)
+* Наставник: [Роман Кунин](https://up.htmlacademy.ru/htmlcss/24/user/497465)
 
 ---
 

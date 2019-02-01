@@ -5,147 +5,147 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <header class="main_header">
-      <nav class="main_nav">
-        <a class="header_logo" href="index.html">
+<!------------------------------------------>
+<!----------------- Шапка ------------------>
+<!------------------------------------------>
+    <header class="header">
+      <nav class="header__nav h-nav">
+        <a class="h-nav__logo">
             <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
         </a>
-        <ul class="user_nav">
-<!-- Может быть не стоит задавать классы всем элементам навигации?(<li>) -->
-          <li class="search">Поиск</li>
-          <li class="login"><span>Валентин Петухов</span> Выйти</li>
-          <li class="compare">
-            <a href="compare.html">Сравнить</a>
+        <ul class="h-nav__user h-user-nav">
+          <li class="h-user-nav__search">Поиск</li>
+          <li class="h-user-nav__login">Войти</li>
+          <li class="h-user-nav__compare">
+            <a href="compare.html" aria-label="Сравнение товара">Сравнить</a>
           </li>
-          <li class="basket">
+          <li class="h-user-nav__basket">
             <a href="basket.html">
               Корзина
             </a>
           </li>
         </ul>
-        <ul class="site_nav">
-          <li> <a href="catalog.html">Каталог товаров</a> </li>
-          <li> <a href="delivery.html">Доставка</a> </li>
-          <li> <a href="garanty.html">Гарантия</a> </li>
-          <li> <a href="contacts.html">Контакты</a> </li>
+        <ul class="h-nav__site h-site-nav">
+          <li class="h-site-nav__catalog"> <a href="catalog.html">Каталог товаров</a> </li>
+          <li class="h-site-nav__delivery"> <a href="delivery.html">Доставка</a> </li>
+          <li class="h-site-nav__garanty"> <a href="garanty.html">Гарантия</a> </li>
+          <li class="h-site-nav__contact"> <a href="contacts.html">Контакты</a> </li>
         </ul>
       </nav>
     </header>
-
-    <main>
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li>
+<!------------------------------------------>
+<!-------------- Содержимое ---------------->
+<!------------------------------------------>
+    <main class="catalog_main">
+      <h1 class="catalog_main__title">Моноподы для селфи</h1>
+      <ul class="catalog_main__breadcrumbs c-breadcrumbs">
+        <li class="c-breadcrumbs__main">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="c-breadcrumbs__products">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="c-breadcrumbs__selfy breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-<!------------------  ------------------->
-<!------------ Фильтр товаров ----------->
-<!------------------  ------------------->
-      <section class="filters">
+    <!------------------  ------------------->
+    <!------------ Фильтр товаров ----------->
+    <!------------------  ------------------->
+      <section class="catalog_main__filters c-filters">
         <h2 class="visually_hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
-        <span class="crossed_out">Показать</span>
+        <span class="c-filters__show crossed_out">Показать</span>
       </section>
-<!------------------  ------------------->
-<!-------------- Сортировка ------------->
-<!------------------  ------------------->
-      <section class="catalog">
+    <!------------------  ------------------->
+    <!-------------- Сортировка ------------->
+    <!------------------  ------------------->
+      <section class="catalog_main__catalog c-catalog">
         <h2 class="visually_hidden">Список товаров</h2>  
-        <ul class="catalog-list">
-          <li>
-            <a href="selfi_item1.html">
-              <img src="img/products/selfi/item1.jpg" width="250" height="400" alt="Изображение селфи-палки">
-              <p>Любительская селфи-палка
-                <span>500 руб.</span>
-              </p>
+        <ul class="c-catalog__list main-catalog">
+          <li class="main-catalog__first c-item">
+            <a href="selfi_item1.html" aria-label="Любительская селфи-палка">
+              <img src="img/products/selfi/item1.jpg" class="c-item__img" width="250" height="400" alt="Изображение селфи-палки">
+              <p class="c-item__title">Любительская селфи-палка</p>
+              <span class="c-item__price">500 руб.</span>
             </a>
           </li>    
-          <li>
-            <a href="selfi_item2.html">
-              <img src="img/products/selfi/item2.jpg" width="250" height="400" alt="Изображение селфи-палки">
-              <p>Профессиональная селфи-палка
-                <span>1 500 руб.</span>
-              </p>
+          <li class="main-catalog__second c-item">
+            <a href="selfi_item2.html" aria-label="Профессиональная селфи-палка">
+              <img src="img/products/selfi/item2.jpg" class="c-item__img" width="250" height="400" alt="Изображение селфи-палки">
+              <p class="c-item__title">Профессиональная селфи-палка</p>
+              <span class="c-item__price">1 500 руб.</span>
             </a>
           </li>
-          <li>
-            <a href="selfi_item3.html">
-              <img src="img/products/selfi/item3.jpg" width="250" height="400" alt="Изображение селфи-палки">
-              <p>Непотопляемая селфи-палка
-                <span>2 500 руб.</span>
-              </p>
+          <li class="main-catalog__third c-item">
+            <a href="selfi_item3.html" aria-label="Непотопляемая селфи-палка">
+              <img src="img/products/selfi/item3.jpg" class="c-item__img" width="250" height="400" alt="Изображение селфи-палки">
+              <p class="c-item__title">Непотопляемая селфи-палка</p>
+              <span class="c-item__price">2 500 руб.</span>
             </a>
           </li>
-          <li>
-            <a href="selfi_item4.html">
-              <img src="img/products/selfi/item4.jpg" width="250" height="400" alt="Изображение селфи-палки">
-              <p>Селфи-палка "Следуй за мной"
-                <span>4 900 руб.</span>
-              </p>
+          <li class="main-catalog__forth c-item">
+            <a href="selfi_item4.html" aria-label="Слефи-палка - Следуй за мной!">
+              <img src="img/products/selfi/item4.jpg" class="c-item__img" width="250" height="400" alt="Изображение селфи-палки">
+              <p class="c-item__title">Селфи-палка "Следуй за мной"</p>
+              <span class="c-item__price">4 900 руб.</span>
             </a>
           </li>      
         </ul> 
-        <ul class="pagination-list">
-          <li class="pagination-item"><a>Назад</a></li>
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">Вперед</a></li>
+        <ul class="c-catalog__pagination pagination">
+          <li class="pagination__word"><a>Назад</a></li>
+          <li class="pagination__item pagination-item-current"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+          <li class="pagination__item"><a href="#">4</a></li>
+          <li class="pagination__word"><a href="#">Вперед</a></li>
         </ul>  
       </section>
     </main>
 <!------------------  ------------------->
 <!---------------- Подвал --------------->
 <!------------------  ------------------->
-    <footer>
-      <nav class="footer_nav">
-        <a class="footer_logo" href="index.html">
-          <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
-        </a>
-        <ul class="footer_user_nav">
-          <li class="login"> <span>Валентин Петухов</span> Выйти</li>
-          <li class="compare">
-            <a href="compare.html">Сравнить</a>
-          </li>
-          <li class="basket">
-            <a href="basket.html">Корзина</a>
-          </li>
-        </ul>
-        <ul class="footer_nav">
-          <li> <a href="delivery.html">Доставка</a> </li>
-          <li> <a href="garanty.html">Гарантия</a> </li>
-          <li> <a href="contacts.html">Контакты</a> </li>
-        </ul>
-      </nav>
-  <!-- можно ли использовать тег <address>? -->
-      <address class="content">
-        <span>г. Москва, ул. Строителей, 15</span>
-        <span>Тел.+7(495)495-95-95</span>
-      </address>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Твитер</a>
-          </li>
-        </ul> 
-      </div>
-      <div class="footer-copyright">
-        <b class="visually_hidden">Разработано:</b> 
-        <a href="https://htmlacademy.ru">
-          <img src="img/html_academy.jpg" width="20" height="30" alt="HTML Academy">  
-        </a>
-      </div>
-    </footer>
+<footer class="footer">
+    <nav class="footer__nav f-nav">
+      <a class="f-nav__logo">
+        <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
+      </a>
+      <ul class="f-nav__user f-user-nav">
+        <li class="f-user-nav__login">Войти</li>
+        <li class="f-user-nav__compare">
+          <a href="compare.html" aria-label="Сравнение товара">Сравнить</a>
+        </li>
+        <li class="f-user-nav__basket">
+          <a href="basket.html">Корзина</a>
+        </li>
+      </ul>
+      <ul class="f-nav__site f-site-nav">
+        <li class="f-site-nav__delivery"> <a href="delivery.html">Доставка</a> </li>
+        <li class="f-site-nav__garanty"> <a href="garanty.html">Гарантия</a> </li>
+        <li class="f-site-nav__contact"> <a href="contacts.html">Контакты</a> </li>
+      </ul>
+    </nav>
+    <address class="footer__address content">
+      <span class="content__adr">г. Москва, ул. Строителей, 15</span>
+      <span class="content__tel">Тел.+7(495)495-95-95</span>
+    </address>
+    <div class="footer__social">
+      <ul class="footer__social f-social">
+        <li class="f-social__facebook">
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li class="f-social__insta">
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
+        <li class="f-social__tweet">
+          <a class="social-button" href="#">Твитер</a>
+        </li>
+      </ul> 
+    </div>
+    <div class="footer__copyright">
+      <b class="visually_hidden">Разработано:</b> 
+      <a href="https://htmlacademy.ru" aria-label="Ссылка на сайт разработчика - HTML Academy">
+        <img src="img/html_academy.jpg" width="20" height="30" alt="Логотип HTML Academy">  
+      </a>
+    </div>
+  </footer>
+  </body>
+</html>

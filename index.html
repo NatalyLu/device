@@ -5,231 +5,225 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <header class="main_header">
-      <nav class="main_nav">
-        <a class="header_logo">
+<!------------------------------------------>
+<!----------------- Шапка ------------------>
+<!------------------------------------------>
+    <header class="header">
+      <nav class="header__nav h-nav">
+        <a class="h-nav__logo">
             <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
         </a>
-        <ul class="user_nav">
-<!-- Может быть не стоит задавать классы всем элементам навигации?(<li>) -->
-          <li class="search">Поиск</li>
-          <li class="login">Войти</li>
-          <li class="compare">
-            <a href="compare.html">Сравнить</a>
+        <ul class="h-nav__user h-user-nav">
+          <li class="h-user-nav__search">Поиск</li>
+          <li class="h-user-nav__login">Войти</li>
+          <li class="h-user-nav__compare">
+            <a href="compare.html" aria-label="Сравнение товара">Сравнить</a>
           </li>
-          <li class="basket">
+          <li class="h-user-nav__basket">
             <a href="basket.html">
               Корзина
             </a>
           </li>
         </ul>
-        <ul class="site_nav">
-          <li> <a href="catalog.html">Каталог товаров</a> </li>
-          <li> <a href="delivery.html">Доставка</a> </li>
-          <li> <a href="garanty.html">Гарантия</a> </li>
-          <li> <a href="contacts.html">Контакты</a> </li>
+        <ul class="h-nav__site h-site-nav">
+          <li class="h-site-nav__catalog"> <a href="catalog.html">Каталог товаров</a> </li>
+          <li class="h-site-nav__delivery"> <a href="delivery.html">Доставка</a> </li>
+          <li class="h-site-nav__garanty"> <a href="garanty.html">Гарантия</a> </li>
+          <li class="h-site-nav__contact"> <a href="contacts.html">Контакты</a> </li>
         </ul>
       </nav>
     </header>
-
-    <main class="container">
+<!------------------------------------------>
+<!-------------- Содержимое ---------------->
+<!------------------------------------------>
+    <main class="main_index">
       <h1 class="visually_hidden">Дивайс - онлайн магазин гаджетов</h1>
-<!-- ------------------------------------- -->
-<!--------------- Реклама ------------------->
-<!-- ------------------------------------- -->
-      <section class="main_advertising">
+    <!-- ------------------------------------- -->
+    <!--------------- Реклама ------------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__advertising index-advertising">
         <h2 class="visually_hidden">Реклама</h2>
         <ul>
-          <li class="var_1">
-            <a href="item1.html">
-              <p class="like_h2">Делай селфи, как Бен Стиллер!</p>
-              <img src="img/products/selfi/item.jpg" width="384" height="486" alt="Изображение самой длинной селфи-палки">
-              <p class="content">Самая длинная палка для селфи доступна в нашем магазине.<br>
+          <li class="index-advertising__var_1 a-var1">
+            <a href="item1.html" aria-label="Самая длинная селфи-палка">
+              <p class="a-var1__title like_h2">Делай селфи, как Бен Стиллер!</p>
+              <img src="img/products/selfi/item.jpg" class="a-var1__img" width="384" height="486" alt="Изображение самой длинной селфи-палки">
+              <p class="a-var1__text content">Самая длинная палка для селфи доступна в нашем магазине.<br>
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <span class="crossed_out">
+              <span class="a-var1__details crossed_out">
                 Подробнее
               </span>
             </a> 
             <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
-            <div>8,5 м  5 кг Карбон</div>
-            <div class="content">Длина палки Вес палки Материал</div>
+            <div class="a-var1__table_parammetrs">8,5 м  5 кг Карбон</div>
+            <div class="a-var1__table_titles content">Длина палки Вес палки Материал</div>
           </li>
-          <li class="var_2"></li>
-          <li class="var_3"></li>
+          <li class="index-advertising__var_2 a-var2"></li>
+          <li class="index-advertising__var_3 a-var3"></li>
         </ul>
       </section>
-<!-- ------------------------------------- -->
-<!---------------- Меню --------------------->
-<!-- ------------------------------------- -->
-      <section class="main_menu"> 
+    <!-- ------------------------------------- -->
+    <!---------------- Меню --------------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__menu index-menu"> 
         <h2 class="visually_hidden">Основное меню</h2>     
-        <ul class="main_menu_text">
-          <li>
-            <a href="virtual.html">
+        <ul class="index-menu__products menu-products">
+          <li class="menu-products__glass">
+            <a href="virtual.html" aria-label="Очки виртуальной реальности">
               <img src="img/products/svg/vertual.svg" width="40" height="20" alt="Очки виртуальной реальности">
               Виртуальная реальность
             </a>
           </li>
-          <li>
-            <a href="monopods.html">
+          <li class="menu-products__monopods">
+            <a href="monopods.html" aria-label="Моноподы для селфи">
               <img src="img/products/svg/monopods.svg" width="40" height="20" alt="Монопод">
               Моноподы для селфи
             </a>
           </li>
-          <li>
-            <a href="camera.html">
+          <li class="menu-products__cameras">
+            <a href="camera.html" aria-label="Экшн-камеры">
               <img src="img/products/svg/camera.svg" width="40" height="20" alt="Камера">
-              Экш-камеры
+              Экшн-камеры
             </a>
           </li>
-          <li>
-            <a href="bracelets.html">
+          <li class="menu-products__bracelets">
+            <a href="bracelets.html"aria-label="Фитнес-браслеты">
               <img src="img/products/svg/bracelets.svg" width="40" height="20" alt="Браслет">
               Фитнес-браслеты
             </a>
           </li>
-          <li>
-            <a href="watch.html">
+          <li class="menu-products__watches">
+            <a href="watch.html" aria-label="Умные часы">
               <img src="img/products/svg/watch.svg" width="40" height="20" alt="Часы">
               Умные часы
             </a>
           </li>
-          <li>
-            <a href="quadcopter.html">
+          <li class="menu-products__quadcopters">
+            <a href="quadcopter.html" aria-label="Квадрокоптеры">
               <img src="img/products/svg/quadcopter.svg" width="40" height="20" alt="Квадрокоптер">
               Квадрокоптеры
             </a>
           </li>
         </ul>   
       </section>
-<!-- ------------------------------------- -->
-<!-------------- Доставка ------------------->
-<!-- ------------------------------------- -->
-      <section class="main_delivery"> 
+    <!-- ------------------------------------- -->
+    <!-------------- Доставка ------------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__service"> 
         <h2 class="visually_hidden">Услуги</h2> 
-        <ul class="services">
-          <li>
-            <a href="delivery.html">
-              <span class="crossed_out">Доставка</span>
-            </a>
-<!-- ?????????????????????????????????????????????????????? -->
-<!-- Текст и картинка, представленные ниже это тоже ссылка?
-или это выплывающая "подсказка" -->
-            <p class="like_h2">Доставка</p>
-            <img src="img/products/svg/deliveryman.svg" width="50" height="100" alt="Доставщик">
-            <p class="content">Мы с удовольствием доставим ваш товар прямо
+        <ul class="service">
+          <li class="service__delivery service-deliv">
+            <span class="service-deliv__main_title crossed_out">Доставка</span>
+            <p class="service-deliv__title like_h2">Доставка</p>
+            <img src="img/products/svg/deliveryman.svg" class="service-delivery__img" width="50" height="100" alt="Доставщик">
+            <p class="service-delivery__text content">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! 
               Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </li>
-          <li>
-            <a href="garanty.html">
-              <span class="crossed_out">Гарантия</span>
-            </a>
-            <p class="like_h2">Гарантия</p>
-            <img src="img/products/svg/guarantee.svg" width="50" height="100" alt="Гарантия">
+          <li class="service__garanty service-gar">
+            <span class="service-gar__main_title crossed_out">Гарантия</span>
+            <p class="service-gar__title like_h2">Гарантия</p>
+            <img src="img/products/svg/guarantee.svg" class="service-gar__img" width="50" height="100" alt="Гарантия">
           </li>
-          <li>
-            <a href="credit.html">
-              <span class="crossed_out">Кредит</span>
-            </a>
-            <p class="like_h2">Кредит</p>
-            <img src="img/products/svg/credit.svg" width="50" height="100" alt="Кредит">
+          <li class="service__credit service-cr">
+            <span class="service-cr__main-title crossed_out">Кредит</span>
+            <p class="service-cr__title like_h2">Кредит</p>
+            <img src="img/products/svg/credit.svg" class="service-cr__img" width="50" height="100" alt="Кредит">
           </li>
         </ul>
       </section>
-<!-- ------------------------------------- -->
-<!---------- Спонсоры/Партнеры -------------->
-<!-- ------------------------------------- -->
-      <section class="main_partners"> 
+    <!-- ------------------------------------- -->
+    <!---------- Спонсоры/Партнеры -------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__partners index-partners"> 
         <h2 class="visually_hidden">Спонсоры</h2>
-        <img src="img/partners/dji.png" width="50" height="100" alt="DJI">
+        <img src="img/partners/dji.png" class="index-partners__img1" width="50" height="100" alt="DJI">
+        <img src="img/partners/SP.png" class="index-partners__img2" width="50" height="100" alt="SP Gadgets">
         <!-- Добавить партнеров -->
       </section>
-<!-- ------------------------------------- -->
-<!--------------- О нас --------------------->
-<!-- ------------------------------------- -->
-      <section class="main_about_us"> 
-        <h2>О нас</h2>
-        <p class="content">
+    <!-- ------------------------------------- -->
+    <!--------------- О нас --------------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__about_us index-about"> 
+        <h2 class="index-about__title">О нас</h2>
+        <p class="index-about__text1 content">
           Огромный выбор гаджетов не оставит равнодушным гика,
           который есть в каждом из нас.
         </p>
-        <p class="content">
+        <p class="index-about__text2 content">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul class="transport_companies">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="index-about__companies transport-comp">
+          <li class="transport-comp__del_linii">Деловые Линии</li>
+          <li class="transport-comp__autorading">Автотрейдинг</li>
+          <li class="transport-comp__railway">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about_us.html">
-          <span class="crossed_out">Подробне о нас </span>
+        <a href="about_us.html" class="index-about__detail crossed_out">
+          Подробне о нас<!-- <span class="crossed_out">Подробне о нас </span> -->
         </a>
       </section>
-<!-- ------------------------------------- -->
-<!-------------- Контакты ------------------->
-<!-- ------------------------------------- -->
-      <section class="main_contacts">  
-        <h2>Контакты</h2>
-        <p class="content">
+    <!-- ------------------------------------- -->
+    <!-------------- Контакты ------------------->
+    <!-- ------------------------------------- -->
+      <section class="main_index__contacts index-contacts">  
+        <h2 class="index-contacts__contacts">Контакты</h2>
+        <p class="index-contacts__text content">
           Вы можете забрать товар сами, заехав в наш офис.
           Заодно, вы сможете проверить работоспоссобность покупки. Всякое бывает.
         </p>
-        <img src="img/map.jpg" width="300" height="100" alt="Карта">
-        <a class="crossed_out" href="write_to_us.html">
-          <span class="crossed_out">Напишите нам </span>
+        <img src="img/map.jpg" class="index-contacts__img" width="300" height="100" alt="Карта">
+        <a href="write_to_us.html"class="index-contacts__write_to crossed_out">
+          Напишите нам<!-- <span class="crossed_out">Напишите нам </span> -->
         </a>       
       </section>
     </main>
 <!-- ------------------------------------- -->
 <!--------------- Подвал -------------------->
 <!-- ------------------------------------- -->
-    <footer class="main-footer">
-      <nav class="footer_nav">
-        <a class="footer_logo">
+    <footer class="footer">
+      <nav class="footer__nav f-nav">
+        <a class="f-nav__logo">
           <img src="img/svg/logo.svg" width="50" height="20" alt="Логотип Device">
         </a>
-        <ul class="footer_user_nav">
-          <li class="login">Войти</li>
-          <li class="compare">
-            <a href="compare.html">Сравнить</a>
+        <ul class="f-nav__user f-user-nav">
+          <li class="f-user-nav__login">Войти</li>
+          <li class="f-user-nav__compare">
+            <a href="compare.html" aria-label="Сравнение товара">Сравнить</a>
           </li>
-          <li class="basket">
+          <li class="f-user-nav__basket">
             <a href="basket.html">Корзина</a>
           </li>
         </ul>
-        <ul class="footer_nav">
-          <li> <a href="delivery.html">Доставка</a> </li>
-          <li> <a href="garanty.html">Гарантия</a> </li>
-          <li> <a href="contacts.html">Контакты</a> </li>
+        <ul class="f-nav__site f-site-nav">
+          <li class="f-site-nav__delivery"> <a href="delivery.html">Доставка</a> </li>
+          <li class="f-site-nav__garanty"> <a href="garanty.html">Гарантия</a> </li>
+          <li class="f-site-nav__contact"> <a href="contacts.html">Контакты</a> </li>
         </ul>
       </nav>
-<!-- можно ли использовать тег <address>? -->
-      <address class="content">
-        <span>г. Москва, ул. Строителей, 15</span>
-        <span>Тел.+7(495)495-95-95</span>
+      <address class="footer__address content">
+        <span class="content__adr">г. Москва, ул. Строителей, 15</span>
+        <span class="content__tel">Тел.+7(495)495-95-95</span>
       </address>
-      <div class="footer-social">
-        <ul>
-          <li>
+      <div class="footer__social">
+        <ul class="footer__social f-social">
+          <li class="f-social__facebook">
             <a class="social-button" href="#">Фейсбук</a>
           </li>
-          <li>
+          <li class="f-social__insta">
             <a class="social-button" href="#">Инстаграм</a>
           </li>
-          <li>
+          <li class="f-social__tweet">
             <a class="social-button" href="#">Твитер</a>
           </li>
         </ul> 
       </div>
-      <div class="footer-copyright">
+      <div class="footer__copyright">
         <b class="visually_hidden">Разработано:</b> 
-        <a href="https://htmlacademy.ru">
-          <img src="img/html_academy.jpg" width="20" height="30" alt="HTML Academy">  
+        <a href="https://htmlacademy.ru" aria-label="Ссылка на сайт разработчика - HTML Academy">
+          <img src="img/html_academy.jpg" width="20" height="30" alt="Логотип HTML Academy">  
         </a>
       </div>
     </footer>
