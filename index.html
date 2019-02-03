@@ -9,8 +9,8 @@
 <!----------------- Шапка ------------------>
 <!------------------------------------------>
     <header class="header">
-      <nav class="header__nav h-nav">
-        <a class="h-nav__logo">
+      <nav class="navigation">
+        <a class="navigation__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
                 <defs>
                   <style>
@@ -21,55 +21,67 @@
               </svg>
           <!-- <img src="img/svg/header-footer/logo.svg" width="50" height="20" alt="Логотип Device"> -->
         </a>
-        <ul class="h-nav__user h-user-nav">
-          <li class="h-user-nav__search">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                  <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3zM2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
-                </svg>
-            Поиск по сайту
+        <ul class="user-navigation">
+          <li class="user-navigation__search">
+            <svg class="image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3zM2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+            </svg>
+            <span class="main-text--grey">Поиск по сайту</span>
           </li>
-          <li class="h-user-nav__login">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-                  <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-                </svg>
-            Войти
+          <li class="user-navigation__login">
+            <svg class="image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+              <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+            </svg>
+            <span class="main-text">Войти</span>
           </li>
-          <li class="h-user-nav__compare">
+          <li class="user-navigation__compare">
             <a href="compare.html" aria-label="Сравнение товара">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
-                    <rect x="8" y="2" width="1.984" height="8"/>
-                    <rect y="3" width="1.984" height="7"/>
-                    <rect x="4" width="2" height="10"/>
-                  </svg>             
-              Сравнить
+              <svg class="image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                <rect x="8" y="2" width="1.984" height="8"/>
+                <rect y="3" width="1.984" height="7"/>
+                <rect x="4" width="2" height="10"/>
+              </svg>             
+              <span class="main-text">Сравнить</span>
             </a>
           </li>
           <li class="h-user-nav__basket">
             <a href="basket.html">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
-                    <g>
-                      <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
-                      <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
-                    </g>
-                  </svg>
-              Корзина
+              <svg class="image-svg"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                <g>
+                  <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+                  <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+                </g>
+              </svg>
+              <span class="main-text">Корзина</span>
             </a>
           </li>
         </ul>
-        <ul class="h-nav__site h-site-nav">
-          <li class="h-site-nav__catalog">
+        <ul class="site-navigation">
+          <li class="site-navigation__catalog">
             <a href="catalog.html">
-              Каталог товаров
+              <span class="text-link">Каталог товаров</span>
               <img src="img/svg/header-footer/plus.png" width="10" height="10">
             </a>
           </li>
-          <li class="h-site-nav__delivery"> <a href="delivery.html">Доставка</a> </li>
-          <li class="h-site-nav__garanty"> <a href="garanty.html">Гарантия</a> </li>
-          <li class="h-site-nav__contact"> <a href="contacts.html">Контакты</a> </li>
+          <li class="site-navigation__delivery"> 
+            <a href="delivery.html">
+                <span class="text-link">Доставка</span>
+            </a> 
+          </li>
+          <li class="site-navigation__garanty"> 
+            <a href="garanty.html">
+              <span class="text-link">Гарантия</span>
+            </a> 
+          </li>
+          <li class="site-navigation__contact"> 
+            <a href="contacts.html">
+              <span class="text-link">Контакты</span>
+            </a> 
+          </li>
         </ul>
       </nav>
     </header>
