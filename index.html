@@ -410,5 +410,58 @@
         </div>
       </div>
     </footer>
+<!-- ------------------------------------- -->
+<!--------------- Поп-апы ------------------->
+<!-- ------------------------------------- -->
+  <!------------ Отправка письма ------------>
+    <form class="letter" method="POST" action="#">
+      <button class="close" type="button">
+        Закрыть
+      </button>
+      <label class="letter__text">
+        Ваше имя:
+        <input type="text" name="person-name" value="" placeholder="Имя Фамилия" required>
+      </label>
+      <label class="letter__text">
+        Ваш e-mail:
+        <input type="email" name="person-email" value="" placeholder="email@example.com" required>
+      </label>
+      <label class="letter__text">
+        Текст письма:
+        <textarea name="person-text" rows="7" placeholder="В свободной форме" required></textarea>
+        <!-- <input type="text" name="person-text" value="" placeholder="В свободной форме" required> -->
+      </label>
+      <button class="crossed-out button-send" type="submit">
+        Отправить
+      </button>
+    </form>
+
+    <form class="map" method="POST" action="#">
+      <button class="close" type="button">
+        Закрыть
+      </button>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abe0e9aae6d0743a0b0b2965c9f9de9473d699b3b98bec1f0745eff26ed31994e&amp;width=687&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </form>
+    
   </body>
 </html>
+
+
+
+
+  <!-- ---------- Вход ----------
+  <form class="entry" method="POST" action="#">
+      <label class="entry__text">
+        Ваше имя:
+        <input type="text" name="person-name" value="" placeholder="Имя Фамилия" required>
+      </label>
+      <label class="entry__text">
+        Ваш e-mail:
+        <input type="email" name="person-email" value="" placeholder="email@example.com" required>
+      </label>
+      <label class="entry__text">
+        Текст письма:
+        <input type="email" name="person-email" value="" placeholder="email@example.com"required>
+      </label>
+    </form> -->
