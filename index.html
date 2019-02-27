@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -25,9 +26,15 @@
         </a>
         <ul class="user-navigation">
           <li class="user-navigation__search main-text">
-            <form class="user-navigation__search-form " action="#" method="post">
-              <input class="search-text" type="text" name="search" value="Поиск по сайту" placeholder="">
-              <input class="search-button" type="submit" value="Найти">
+            <form class="form-search " action="#" method="post">
+              <svg class="form-search__img user-navigation__image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
+                  c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
+                  M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+              </svg>
+              <input class="form-search__input main-text main-text--grey" type="text" name="search" value="" placeholder="Поиск по сайту">
+              <input class="form-search__button" type="submit" value="Найти">
             </form>
           </li>
           <li class="user-navigation__login main-text">
@@ -38,7 +45,7 @@
             Войти
           </li>
           <li class="user-navigation__compare">
-            <a class=" main-text" href="#" aria-label="Сравнение товара">
+            <a class="main-text" href="#" aria-label="Сравнение товара">
               <svg class="user-navigation__image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                 <rect x="8" y="2" width="1.984" height="8"/>
@@ -64,7 +71,7 @@
         <ul class="site-navigation site-navigation--bottom">
           <li class="site-navigation__catalog">
             <a href="catalog.html" class="text-link">
-              <span>КАТАЛОГ ТОВАРОВ</span>
+              <span class="site-navigation__name-catalog">КАТАЛОГ ТОВАРОВ</span>
             </a>
             <span class="site-navigation__extra-catalog">
               <ul class="extra-catalog-group1">
@@ -107,59 +114,85 @@
     <!-- ------------------------------------- -->
     <!--------------- Реклама ------------------->
     <!-- ------------------------------------- -->
-      <section class="main-index__advertising advertising">
+      <section class="main-index__advertising advertising block-center">
         <h2 class="visually-hidden">Реклама</h2>
         <ul>
-          <li class="advertising__var-1 ">
-            <p class="big-number">01</p>
-            <p class="advertising__title big-title ">Делай селфи, как Бен Стиллер!</p>
-            <img src="img/png/slider-1.png" class="advertising__img" width="384" height="486" alt="Изображение самой длинной селфи-палки">
-            <p class="advertising__text main-text main-text--grey">
-              Самая длинная палка для селфи доступна в нашем магазине.<br>
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p>
-            <a class="advertising__details crossed-out text-link" href="item1.html" aria-label="Самая длинная селфи-палка">
-              Подробнее
-            </a> 
-            <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
-            <div class="advertising__table-row1 gilroy-slim">8,5 м  5 кг Карбон</div>
-            <div class="advertising__table-row2 main-text main-text--grey main-text--small">Длина палки Вес палки Материал</div>
+          <li class="advertising__var-1">
+            <span class="advertising__colum1-var1">
+              <img src="img/png/slider-1.png" class="advertising__img" width="384" height="486" alt="Изображение самой длинной селфи-палки">
+            </span>
+            <span class="advertising__colum2-var1">
+              <p class="big-number">01</p>
+              <p class="advertising__title big-title ">Делай селфи,<br>как Бен Стиллер!</p>
+              <p class="advertising__text main-text main-text--black">
+                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a class="advertising__details crossed-out text-link" href="item1.html" aria-label="Самая длинная селфи-палка">
+                Подробнее
+              </a> 
+              <form class="form-adv " action="#" method="post">
+                <input type="radio" name="adv" id="var1" value="first-adv" checked><label for="var1"></label>
+                <input type="radio" name="adv" id="var2" value="second-adv"><label for="var2"></label>
+                <input type="radio" name="adv" id="var3" value="thierd-adv"><label for="var3"></label>
+              </form>
+              <table class="advertising__table">
+                <tr class="advertising__table-row1 gilroy-slim">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr  class="advertising__table-row2 main-text main-text--black main-text--small">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+<!--       <div class="advertising__table-row1 gilroy-slim">8,5 м  5 кг Карбон</div>
+              <div class="advertising__table-row2 main-text main-text--black main-text--small">Длина палки Вес палки Материал</div> -->
+            </span>
           </li>
 
-          <li class="advertising__var-2">
-            <p class="big-number">02</p>
-            <p class="advertising__title big-title">Худеем правильно!</p>
+          <li class="advertising__var-2 visually-hidden">
             <img src="img/png/slider-2.png"  class="advertising__img" width="345" height="485" alt="Изображение Фитнес-браслета">
-            <p class="advertising__text main-text main-text--grey">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-              не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="advertising__details crossed-out text-link" href="item2.html" aria-label="Фитнес-браслеты">
-              Подробнее
-            </a> 
-            <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
-            <div class="advertising__table-row1 gilroy-slim">48 часов</div>
-            <div class="advertising__table-row2 main-text main-text--grey main-text--small">
-              Без подзарядки
-            </div>
+            <span class="advertising__colum2-var2">
+              <p class="big-number">02</p>
+              <p class="advertising__title big-title">Худеем правильно!</p>
+              <p class="advertising__text main-text main-text--grey">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <!-- crossed-out  -->
+              <a class="advertising__details text-link" href="item2.html" aria-label="Фитнес-браслеты">
+                Подробнее
+              </a> 
+              <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
+              <div class="advertising__table-row1 gilroy-slim">48 часов</div>
+              <div class="advertising__table-row2 main-text main-text--grey main-text--small">
+                Без подзарядки
+              </div>
+            </span>
           </li>
 
-          <li class="advertising__var-3">
-            <p class="big-number">03</p>
-            <p class="advertising__title big-title">Пархает как бабочка, жалит как пчела!</p>
+          <li class="advertising__var-3 visually-hidden">
             <img src="img/png/slider-3.png"  class="advertising__img" width="526" height="334" alt="Изображение квадрокоптера">
-            <p class="advertising__text main-text main-text--grey">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-              мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="advertising__details crossed-out text-link" href="item3.html" aria-label="Квадрокоптеры">
-              Подробнее
-            </a> 
-            <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
-            <div class="advertising__table-row1 gilroy-slim"> 800 м 50 м</div>
-            <div class="advertising__table-row2 main-text main-text--grey main-text--small">
-              Дальность полета Радиус поражения
-            </div>  
+            <span class="advertising__colum2-var3">
+              <p class="big-number">03</p>
+              <p class="advertising__title big-title">Пархает как бабочка, жалит как пчела!</p>
+              <p class="advertising__text main-text main-text--grey">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <!-- crossed-out  -->
+              <a class="advertising__details text-link" href="item3.html" aria-label="Квадрокоптеры">
+                Подробнее
+              </a> 
+              <!-- Здесь, наверное, лучше сделать таблицей через стили  -->
+              <div class="advertising__table-row1 gilroy-slim"> 800 м 50 м</div>
+              <div class="advertising__table-row2 main-text main-text--grey main-text--small">
+                Дальность полета Радиус поражения
+              </div>  
+            </span>
           </li>
         </ul>
       </section>
@@ -227,7 +260,8 @@
         <h2 class="visually-hidden">Услуги</h2> 
         <ul class="service">
           <li class="service__delivery">
-            <span class="service__main-title crossed-out text-link">Доставка</span>
+              <!-- crossed-out -->
+            <span class="service__main-title  text-link">Доставка</span>
             <p class="service__title big-title">Доставка</p>
             <img class="service__img" src="img/png/mandeliver.png"  width="136" height="164" alt="Доставщик">
             <p class="service__text main-text main-text--grey">
@@ -237,7 +271,8 @@
             </p>
           </li>
           <li class="service__garanty">
-            <span class="service__main-title crossed-out text-link">Гарантия</span>
+              <!-- crossed-out  -->
+            <span class="service__main-title text-link">Гарантия</span>
             <p class="service__title big-title">Гарантия</p>
             <img class="service__img" src="img/png/garanty.png" width="171" height="194" alt="Гарантия">
             <p class="service__text main-text main-text--grey">
@@ -247,7 +282,8 @@
             </p>
           </li>
           <li class="service__credit service-cr">
-            <span class="service__main-title crossed-out text-link">Кредит</span>
+              <!-- crossed-out -->
+            <span class="service__main-title text-link">Кредит</span>
             <p class="service__title big-title">Кредит</p>
             <img class="service__img" src="img/png/credit.png" width="156" height="186" alt="Кредит">
             <p class="service__text main-text main-text--grey">
@@ -297,7 +333,8 @@
           <li class="about__paragraphs main-text main-text--black">Автотрейдинг</li>
           <li class="about__paragraphs main-text main-text--black">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about_us.html" class="about__detail crossed-out text-link">
+        <!-- crossed-out -->
+        <a href="about_us.html" class="about__detail  text-link">
           Подробне о нас
         </a>
       </section>
@@ -311,7 +348,8 @@
           проверить работоспоссобность покупки. Всякое бывает.
         </p>
         <img src="img/map.jpg" class="contacts__img" width="300" height="100" alt="Карта">
-        <a href="write_to_us.html"class="contacts__write-to-us crossed-out text-link">
+        <!--  crossed-out -->
+        <a href="write_to_us.html"class="contacts__write-to-us text-link">
           Напишите нам<!-- <span class="crossed_out">Напишите нам </span> -->
         </a>       
       </section>
@@ -445,7 +483,8 @@
         <textarea name="person-text" rows="7" placeholder="В свободной форме" required></textarea>
         <!-- <input type="text" name="person-text" value="" placeholder="В свободной форме" required> -->
       </label>
-      <button class="crossed-out button-send" type="submit">
+      <!-- crossed-out  -->
+      <button class="button-send" type="submit">
         Отправить
       </button>
     </form>
