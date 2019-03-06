@@ -21,7 +21,11 @@
   color: black;
 } 
 .main-text--grey{
-  opacity: 0.2;
+  color: #464646;
+  /* opacity: 0.2; */
+}
+.main-text--white{
+  color: white;
 }
 .main-text--small{
   font-size: 13px;
@@ -30,6 +34,14 @@
   font-family: "GilroyBold", "Times New Roman", "Georgia", serif;
   font-size: 18px;
   color: black;
+}
+.text-link--white{
+  color: white;
+}
+.text-link--small{
+  font-size: 15px;
+}
+.text-link--specing-uppercase{
   letter-spacing: 4px;
   text-transform: uppercase;
 }
