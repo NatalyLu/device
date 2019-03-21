@@ -3,32 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#slider-range" ).slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [ 75, 300 ],
+          slide: function( event, ui ) {
+            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+          }
+        });
+        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+          " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+      } );
+      </script> -->
   </head>
   <body>
-<!------------------------------------------>
-<!----------------- Шапка ------------------>
-<!------------------------------------------>
+    <!------------------------------------------>
+    <!----------------- Шапка ------------------>
+    <!------------------------------------------>
     <header class="header block-center">
       <nav class="navigation">
         <a class="navigation__logo"  href="index.html" >
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-            <defs>
-              <!-- <style>
-                .cls-1{fill-rule:evenodd}
-              </style> -->
-            </defs>
+            <!-- <defs><style>.cls-1{fill-rule:evenodd}</style></defs> -->
             <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
           </svg>
           <!-- <img src="img/svg/header-footer/logo.svg" width="50" height="20" alt="Логотип Device"> -->
         </a>
         <ul class="user-navigation">
           <li class="user-navigation__search main-text">
-            <form class="user-navigation__search-form " action="#" method="post">
-              <input class="search-text" type="text" name="search" value="Поиск по сайту" placeholder="">
-              <input class="search-button" type="submit" value="Найти">
+            <form class="form-search " action="#" method="post">
+              <svg class="form-search__img user-navigation__image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
+                  c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
+                  M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+              </svg>
+              <input class="form-search__input main-text main-text--grey" type="text" name="search" value="" placeholder="Поиск по сайту">
+              <input class="form-search__button" type="submit" value="Найти">
             </form>
           </li>
           <li class="user-navigation__login login--out main-text">
@@ -50,7 +71,7 @@
             </a>
           </li>
           <li class="user-navigation__basket">
-            <a class=" main-text" href="#">
+            <a class=" main-text" href="#" aria-label="Корзина">
               <svg class="user-navigation__image-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
                 <g>
@@ -64,8 +85,8 @@
         </ul>
         <ul class="site-navigation">
           <li class="site-navigation__catalog">
-            <a href="catalog.html"  class="text-link">
-              <span>КАТАЛОГ ТОВАРОВ</span>
+            <a href="catalog.html"  class="text-link  text-link--specing-uppercase">
+              <span class="site-navigation__name-catalog">КАТАЛОГ ТОВАРОВ</span>
             </a>
             <span class="site-navigation__extra-catalog">
               <ul class="extra-catalog-group1">
@@ -83,133 +104,175 @@
             </span> 
           </li>
           <li class="site-navigation__delivery"> 
-            <a href="#" class=" text-link">
+            <a href="#" class="text-link text-link--specing-uppercase">
               ДОСТАВКА
             </a> 
           </li>
           <li class="site-navigation__garanty"> 
-            <a href="#" class=" text-link">
+            <a href="#" class="text-link text-link--specing-uppercase">
               ГАРАНТИЯ
             </a> 
           </li>
           <li class="site-navigation__contact"> 
-            <a href="#" class=" text-link">
+            <a href="#" class="text-link text-link--specing-uppercase">
               КОНТАКТЫ
             </a> 
           </li>
         </ul>
       </nav>
     </header>
-<!------------------------------------------>
-<!-------------- Содержимое ---------------->
-<!------------------------------------------>
-    <main class="monopods">
-      <h1 class="monopods__title">Моноподы для селфи</h1>
-      <ul class="monopods__breadcrumbs">
-        <li class="breadcrumbs__main">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__catalog">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs__monopods breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
-    <!------------------  ------------------->
-    <!------------ Фильтр товаров ----------->
-    <!------------------  ------------------->
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="form-filter" method="GET" action="#">
-          <fieldset>
-            <legend class="form-filter__legend">Цвет</legend>
-            <label>
-              Черный
-              <input class="form-filter__checkbox" name="black" type="checkbox" checked>
-            </label>
-            <label>
-              Белый
-              <input class="form-filter__checkbox" name="white" type="checkbox">
-            </label>
-            <label>
-              Синий
-              <input class="form-filter__checkbox" name="dark-blue" type="checkbox" checked>
-            </label>
-            <label>
-              Красный
-              <input class="form-filter__checkbox" name="red" type="checkbox" checked>
-            </label>
-            <label>
-              Розовый
-              <input class="form-filter__checkbox" name="pink" type="checkbox">
-            </label>
-          </fieldset>
-          
-          <fieldset>
-            <legend class="form-filter__legend">Bluetooth</legend>
-            <label>
-              <input class="form-filter__radio" type="radio" name="yes-no" value="yes" checked>
-              Есть
-            </label>
-            <label>
-              <input class="form-filter__radio" type="radio" name="yes-no" value="no" checked> 
-              Нет
-            </label>
-          </fieldset>
-          <button class="crossed-out form-filter__show" type="submit">показать</button>
-        </form>
-        <span class="filters__show crossed_out">Показать</span>
+    <!------------------------------------------>
+    <!-------------- Содержимое ---------------->
+    <!------------------------------------------>
+    <main class="monopods-main">
+      <section class="manopods block-center">
+        <h1 class="monopods__title text-link">Моноподы для селфи</h1>
+        <ul class="monopods__breadcrumbs">
+          <li class="breadcrumbs__main">
+            <a class="opensans-small main-text--grey" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__catalog">
+            <a class="opensans-small main-text--grey" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs__monopods breadcrumbs-current opensans-small main-text--grey">Моноподы для селфи</li>
+        </ul>
       </section>
-    <!------------------  ------------------->
-    <!-------------- Каталог ------------->
-    <!------------------  ------------------->
-      <section class="monopods__catalog">
-        <h2 class="visually-hidden">Список товаров</h2>  
-        <ul class="monopods__list catalog-list">
-          <li class="catalog-list__first-item">
-            <a href="selfi_item1.html" aria-label="Любительская селфи-палка">
-              <img src="img/products/item1.jpg" class="catalog-list__img" width="360" height="400" alt="Изображение селфи-палки">
-              <p class="catalog-list__title">Любительская селфи-палка</p>
-              <span class="catalog-list__price">500 руб.</span>
-            </a>
-          </li>    
-          <li class="catalog-list__second-item">
-            <a href="selfi_item2.html" aria-label="Профессиональная селфи-палка">
-              <img src="img/products/item2.jpg" class="catalog-list__img" width="360" height="400" alt="Изображение селфи-палки">
-              <p class="catalog-list__title">Профессиональная селфи-палка</p>
-              <span class="catalog-list__price">1 500 руб.</span>
-            </a>
-          </li>
-          <li class="catalog-list__third-item">
-            <a href="selfi_item3.html" aria-label="Непотопляемая селфи-палка">
-              <img src="img/products/item3.jpg" class="catalog-list__img" width="360" height="400" alt="Изображение селфи-палки">
-              <p class="catalog-list__title">Непотопляемая селфи-палка</p>
-              <span class="catalog-list__price">2 500 руб.</span>
-            </a>
-          </li>
-          <li class="catalog-list__forth-item">
-            <a href="selfi_item4.html" aria-label="Слефи-палка - Следуй за мной!">
-              <img src="img/products/item4.jpg" class="catalog-list__img" width="360" height="400" alt="Изображение селфи-палки">
-              <p class="catalog-list__title">Селфи-палка "Следуй за мной"</p>
-              <span class="catalog-list__price">4 900 руб.</span>
-            </a>
-          </li>      
-        </ul> 
-        <ul class="monopods__pagination pagination">
-          <li class="pagination__word"><a>Назад</a></li>
-          <li class="pagination__item pagination-item-current"><a>1</a></li>
-          <li class="pagination__item"><a href="#">2</a></li>
-          <li class="pagination__item"><a href="#">3</a></li>
-          <li class="pagination__item"><a href="#">4</a></li>
-          <li class="pagination__word"><a href="#">Вперед</a></li>
-        </ul>  
+      <section class="filter-catalog">
+        <div class="filter">
+          <!-- <h2 class="filter__title visually-hidden">Фильтры товаров</h2> -->
+          <div class="filter__title-container">
+            <div class="filter__title text-link text-link--specing-uppercase "><span>ФИЛЬТР:</span></div>
+          </div>
+          <!-- oninput="cost-out.value = cost.value" -->
+          <form class="filter__main-form main-filter block-center" method="GET" action="#">
+            <fieldset class="cost-form">
+              <legend class="cost-form__legend text-link">Стоимость</legend>
+              <input сlass="cost-form__range" name="cost" type="range" min="0" max="8000" step="100" value="5000" >
+              <output сlass="cost-form__value"name="cost-out"><pre class="gilroy-slim gilroy-slim--grey-small">от 0                 до 5000</pre></output>
+            </fieldset>
+            <fieldset class="color-form main-text">
+              <legend class="color-form__legend text-link">Цвет</legend>
+              <div class="color-form__checkbox">
+                <input name="black" type="checkbox" id="check-black" checked>
+                <label for="check-black">Черный</label>
+              </div>  
+              <div class="color-form__checkbox">
+                <input name="white" type="checkbox" id="check-white">
+                <label for="check-white">Белый</label>
+              </div>
+              <div class="color-form__checkbox">
+                <input name="dark-blue" type="checkbox" id="check-darkblue" checked>
+                <label for="check-darkblue">Синий</label>
+              </div>
+              <div class="color-form__checkbox">
+                <input name="red" type="checkbox" id="check-red" checked>
+                <label for="check-red">Красный</label>
+              </div>
+              <div class="color-form__checkbox">
+                <input name="pink" type="checkbox" id="check-pink">
+                <label for="check-pink">Розовый</label>
+              </div>
+              </fieldset>
+            
+            <fieldset class="bluetooth-form main-text">
+              <legend class="bluetooth-form__legend text-link">Bluetooth</legend>
+                <div class="bluetooth-form__radio">
+                  <input type="radio" name="yes-no" value="yes" id="radio-yes" checked>
+                  <label for="radio-yes">Есть</label>
+                </div>
+                <div class="bluetooth-form__radio">
+                  <input type="radio" name="yes-no" value="no"  id="radio-no" checked> 
+                  <label for="radio-no">Нет</label>
+                </div>
+            </fieldset>
+            <fieldset class="main-filter__butten-show">
+              <button class="butten-show crossed-out text-link text-link--specing-uppercase" type="submit">
+                  показать
+              </button>
+            </fieldset>
+          </form>
+        </div>
+
+      <!-------------- Каталог ------------->
+        <div class="catalog-list">  
+          <div class="catalog-list__sort sort">
+            <div class="sort__title">
+              <article class="sort__choice opensans-small main-text--grey">
+                <span class="sort__label text-link text-link--specing-uppercase">Сортировка:</span>
+                <input name="sort" type="radio" value="to price"  id="price" checked >
+                <label for="price">По цене</label>
+
+                <input name="sort" type="radio" value="to type" id="type">
+                <label for="type">По типу</label>
+              
+                <input name="sort" type="radio" value="to popular" id="pop">
+                <label for="pop">По популярности</label>
+              
+              </article>
+              <article class="sort__type-of-sort">
+                <input name="type-of-sort-in" type="radio" value="increace" id="increace" >
+                <label for="increace"></label>
+
+                <input name="type-of-sort-dic" type="radio" value="dicreace" for="dicreace" checked>
+                <label for="dicreace"></label>
+              </article>
+            </div>
+          </div>
+          <div class="catalog-list__list list">
+            <h2 class="visually-hidden">Список товаров</h2>
+            <ul class="list__itemS">
+              <li class="list__item">
+                <img src="img/products/item1.jpg" class="list__img" width="360" height="380" alt="Изображение селфи-палки">
+                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit">В корзину </button>
+                <a href="#" aria-label="Любительская селфи-палка">
+                  <p class="list__item-title text-link">Любительская селфи-палка</p>
+                  <span class="list__item-price gilroy-slim">500 руб.</span>
+                </a>
+              </li>    
+              <li class="list__item">
+                <img src="img/products/item2.jpg" class="list__img" width="360" height="380" alt="Изображение селфи-палки">
+                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit">В корзину </button>
+                <a href="#" aria-label="Профессиональная селфи-палка">
+                  <p class="list__item-title text-link">Профессиональная <br>селфи-палка</p>
+                  <span class="list__item-price gilroy-slim">1 500 руб.</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <img src="img/products/item3.jpg" class="list__img" width="360" height="380" alt="Изображение селфи-палки">
+                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit">В корзину </button>
+                <a href="#" aria-label="Непотопляемая селфи-палка">
+                  <p class="list__item-title text-link">Непотопляемая селфи-палка</p>
+                  <span class="list__item-price gilroy-slim">2 500 руб.</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <img src="img/products/item4.jpg" class="list__img" width="360" height="380" alt="Изображение селфи-палки">
+                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit">В корзину </button>
+                <a href="#" aria-label="Слефи-палка - Следуй за мной!">
+                  <p class="list__item-title text-link">Селфи-палка "Следуй за мной"</p>
+                  <span class="list__item-price gilroy-slim">4 900 руб.</span>
+                </a>
+              </li>      
+            </ul>
+            <div class="list__pagination pagination">
+              <a href="#" class="pagination__word text-link text-link--specing-uppercase">Назад</a> 
+              <ul class="pagination__numberS">              
+                <li class="pagination__number pagination-item-current"><a class="text-link">1</a></li>
+                <li class="pagination__number"><a href="#" class="text-link">2</a></li>
+                <li class="pagination__number"><a href="#" class="text-link">3</a></li>             
+              </ul> 
+              <a href="#" class="pagination__word text-link text-link--specing-uppercase">Вперед</a> 
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-<!------------------  ------------------->
-<!---------------- Подвал --------------->
-<!------------------  ------------------->
+    <!------------------  ------------------->
+    <!---------------- Подвал --------------->
+    <!------------------  ------------------->
     <footer class="footer">
     <!-- Первая строка-->
-      <div class="footer__first-row footer-first">
+      <div class="footer__first-row footer-first block-center">
         <a class="footer-first__logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35" fill="#ffc600">
             <!-- <defs><style>.cls-1{fill-rule:evenodd}</style> </defs> -->
@@ -217,86 +280,93 @@
           </svg>
         </a>
         <ul class="footer-first__user-nav">
-          <li class="footer-first__login main-text main-text--white">
+          <li class="footer-first__login footer-first__login--after main-text main-text--white">
             <svg class="footer-first__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
               <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
             </svg>
             Валентин Петухов
-            <span class="login-out main-text main-text--grey">Выйти</span>
+            <!-- <span class="login-out main-text main-text--white">Валентин Петухов</span> -->
+            <!-- <span class="login-out main-text main-text--grey">Выйти</span> -->
           </li>
-          <li class="footer-first__compare main-text main-text--white">
-            <a href="compare.html" aria-label="Сравнение товара">
+          <li class="footer-first__compare">
+            <a class="main-text main-text--white" href="compare.html" aria-label="Сравнение товара">
               <svg class="footer-first__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve" fill="#ffc600">
                 <rect x="8" y="2" width="1.984" height="8"/><rect y="3" width="1.984" height="7"/>
                 <rect x="4" width="2" height="10"/>
               </svg>  
-              Сравнить
+              <span>Сравнить</span>
             </a>
           </li>
-          <li class="footer-first__basket main-text main-text--white">
-            <a href="basket.html" aria-label="Корзина">
+          <li class="footer-first__basket">
+            <a class="main-text main-text--white" href="basket.html" aria-label="Корзина">
               <svg class="footer-first__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve" fill="#ffc600">
                 <g>
                   <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
                   <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
                 </g>
               </svg>
-              Корзина
+              <span>Корзина</span>
             </a>
           </li>
         </ul>
       </div>
     <!-- Вторая строка-->
-      <div class="footer__second-row footer-second"> 
+      <div class="footer__second-row footer-second block-center"> 
+        <address class="footer-second__address-1 f-addr">
+          <span class="f-addr__adr main-text main-text--white">г. Москва, ул. Строителей, 15</span>
+        </address>
         <ul class="footer-second__site-nav">
-          <li class="footer-second__delivery text-link text-link--white"> 
-            <a href="delivery.html">Доставка</a> 
+          <li class="footer-second__delivery"> 
+            <a class="text-link text-link--white text-link--specing-uppercase" href="delivery.html">Доставка</a> 
           </li>
-          <li class="footer-second__garanty text-link text-link--white"> 
-            <a href="garanty.html">Гарантия</a> 
+          <li class="footer-second__garanty"> 
+            <a class="text-link text-link--white text-link--specing-uppercase" href="garanty.html">Гарантия</a> 
           </li>
-          <li class="footer-second__contact text-link text-link--white"> 
-            <a href="contacts.html">Контакты</a> 
+          <li class="footer-second__contact"> 
+            <a class="text-link text-link--white text-link--specing-uppercase" href="contacts.html">Контакты</a> 
           </li>
         </ul>
-        <address class="footer-second__address f-addr main-text">
-  <!-- Здесь цвет можно накинуть через класс "footer-second__address" -->
-          <span class="f-addr__adr">г. Москва, ул. Строителей, 15</span>
-          <span class="f-addr__tel">Тел.+7(495)495-95-95</span>
+        <!-- </nav> -->
+        <address class="footer-second__address-2 f-addr">
+          <span class="f-addr__tel  main-text main-text--white">Тел.: +7 (495) 495-95-95</span>
         </address>
       </div> 
     <!-- Третья строка-->
-      <div class="footer__third-row footer-third">
+      <div class="footer__third-row footer-third block-center">
+        <span class="footer-third__line"></span>
         <ul class="footer-third__social">
           <li class="footer-third__facebook">
             <a class="social-button" href="#" aria-label="Фейсбук">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                <path fill="#7e7e7e" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
               </svg>
             </a>
           </li>
           <li class="footer-third__insta">
             <a class="social-button" href="#" aria-label="Инстаграм">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <g>
-                  <path fill="#7e7e7e" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
-                  <path fill="#7e7e7e" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
-                  <rect x="18.637" y="10.302" fill="#7e7e7e" width="3.039" height="3.039"/>
-                  <path fill="#7e7e7e" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0zM23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+                  <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+                  <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+                  <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+                  <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0zM23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
                 </g>
-              </svg>
+             </svg>
             </a>
           </li>
           <li class="footer-third__tweet">
             <a class="social-button" href="#" aria-label="Твитер">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                <g id="Layer_1">
-                </g>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+                height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <g id="Layer_1"></g>
                 <g id="Layer_2">
-                  <path fill="#7e7e7e" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0zM23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
-                    c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
+                  <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0zM23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
+                    c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
+                    c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
                 </g>
-                </svg>
+             </svg>
             </a>
           </li>
         </ul> 

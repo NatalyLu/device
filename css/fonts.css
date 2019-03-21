@@ -21,8 +21,12 @@
   color: black;
 } 
 .main-text--grey{
-  color: #464646;
-  /* opacity: 0.2; */
+  color: #7a7a7a;
+}
+.opensans-small{
+  font-family: "Open Sans", "Vardana", "Arial", sans-serif;
+  font-size: 14px;
+  /* color: #7a7a7a;#c7c7c7; */
 }
 .main-text--white{
   color: white;
@@ -49,6 +53,10 @@
   font-family: "GilroySlim", "Times New Roman", "Georgia", serif;
   font-size: 36px;
   color: black;
+}
+.gilroy-slim--grey-small{
+  font-size: 14px;
+  color: #d1d0d0;
 }
 .big-title{
   font-family: "GilroyBold", "Times New Roman", "Georgia", serif;
