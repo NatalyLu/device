@@ -472,29 +472,30 @@
 <!--------------- Поп-апы ------------------->
 <!-- ------------------------------------- -->
   <!------------ Отправка письма ------------>
-    <form class="letter" method="POST" action="#">
-      <button class="close" type="button">
+    <section class="modal">
+      <button class="modal__close" type="button">
         Закрыть
       </button>
-      <label class="letter__text">
-        Ваше имя:
-        <input type="text" name="person-name" value="" placeholder="Имя Фамилия" required>
-      </label>
-      <label class="letter__text">
-        Ваш e-mail:
-        <input type="email" name="person-email" value="" placeholder="email@example.com" required>
-      </label>
-      <label class="letter__text">
-        Текст письма:
-        <textarea name="person-text" rows="7" placeholder="В свободной форме" required></textarea>
-        <!-- <input type="text" name="person-text" value="" placeholder="В свободной форме" required> -->
-      </label>
-      <!-- crossed-out  -->
-      <button class="button-send" type="submit">
-        Отправить
+      <form class="modal__message" method="POST" action="#">
+        <label class="modal__text text-link">
+          Ваше имя:
+          <input class="main-text opensans-small" type="text" name="person-name" value="" placeholder="Имя Фамилия" required>
+        </label>
+        <label class="modal__text text-link">
+          Ваш e-mail:
+          <input class="main-text opensans-small" type="email" name="person-email" value="" placeholder="email@example.com" required>
+        </label>
+        <label class="modal__text modal__text-3 text-link">
+          Текст письма:
+          <textarea class="main-text opensans-small" name="person-text" rows="7" cols="1200" placeholder="В свободной форме" required></textarea>
+          <!-- <input type="text" name="person-text" value="" placeholder="В свободной форме" required> -->
+        </label>
+        <!-- crossed-out  -->
+      </form>
+      <button class="modal__button-send " type="submit">
+        <span class="crossed-out text-link text-link--specing-uppercase">Отправить</span>
       </button>
-    </form>
-
+    </section>
     <form class="map" method="POST" action="#">
       <button class="close" type="button">
         Закрыть

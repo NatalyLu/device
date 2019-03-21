@@ -143,12 +143,22 @@
           <div class="filter__title-container">
             <div class="filter__title text-link text-link--specing-uppercase "><span>ФИЛЬТР:</span></div>
           </div>
-          <!-- oninput="cost-out.value = cost.value" -->
           <form class="filter__main-form main-filter block-center" method="GET" action="#">
             <fieldset class="cost-form">
               <legend class="cost-form__legend text-link">Стоимость</legend>
-              <input сlass="cost-form__range" name="cost" type="range" min="0" max="8000" step="100" value="5000" >
-              <output сlass="cost-form__value"name="cost-out"><pre class="gilroy-slim gilroy-slim--grey-small">от 0                 до 5000</pre></output>
+              <div class="cost-form__range-filter">
+                <div class="cost-form__range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="cost-form__price-controls">
+                  <label class="min-price gilroy-slim gilroy-slim--grey-small">от <input class="gilroy-slim gilroy-slim--grey-small" name="min-price" type="text" value="0"></label>
+                  <label class="max-price gilroy-slim gilroy-slim--grey-small">до <input class="gilroy-slim gilroy-slim--grey-small" name="max-price" type="text" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="color-form main-text">
               <legend class="color-form__legend text-link">Цвет</legend>
@@ -181,7 +191,7 @@
                   <label for="radio-yes">Есть</label>
                 </div>
                 <div class="bluetooth-form__radio">
-                  <input type="radio" name="yes-no" value="no"  id="radio-no" checked> 
+                  <input type="radio" name="yes-no" value="no"  id="radio-no"> 
                   <label for="radio-no">Нет</label>
                 </div>
             </fieldset>
@@ -210,11 +220,14 @@
               
               </article>
               <article class="sort__type-of-sort">
-                <input name="type-of-sort-in" type="radio" value="increace" id="increace" >
-                <label for="increace"></label>
-
-                <input name="type-of-sort-dic" type="radio" value="dicreace" for="dicreace" checked>
-                <label for="dicreace"></label>
+                <div>
+                  <input name="type-of-sort-in" type="radio" value="increace" id="increace" >
+                  <label for="increace"></label>
+                </div>
+                <div>
+                  <input name="type-of-sort-dic" type="radio" value="dicreace" for="dicreace" checked>
+                  <label for="dicreace"></label>
+                </div>
               </article>
             </div>
           </div>
@@ -239,7 +252,7 @@
               </li>
               <li class="list__item">
                 <img src="img/products/item3.jpg" class="list__img" width="360" height="380" alt="Изображение селфи-палки">
-                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit">В корзину </button>
+                <button class="list__button crossed-out text-link text-link--specing-uppercase" type="submit"><span>В корзину </span></button>
                 <a href="#" aria-label="Непотопляемая селфи-палка">
                   <p class="list__item-title text-link">Непотопляемая селфи-палка</p>
                   <span class="list__item-price gilroy-slim">2 500 руб.</span>
