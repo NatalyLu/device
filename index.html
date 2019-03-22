@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/fonts.css" rel="stylesheet">
+    <!-- <link href="css/fonts.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,8 +23,7 @@
         <ul class="user-navigation">
           <li class="user-navigation__search main-text">
             <form class="form-search " action="#" method="post">
-              <svg class="form-search__img user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <svg class="form-search__img user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                 <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3zM2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
               </svg>
               <input class="form-search__input main-text main-text--grey" type="text" name="search" value="" placeholder="Поиск по сайту">
@@ -32,16 +31,16 @@
             </form>
           </li>
           <li class="user-navigation__login main-text">
-            <svg class="user-navigation__image-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-              <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-            </svg>
-            Войти
+            <div>
+              <svg class="user-navigation__image-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+              </svg>
+              Войти
+            </div>
           </li>
           <li class="user-navigation__compare">
             <a class="main-text" href="#" aria-label="Сравнение товара">
-              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                 <rect x="8" y="2" width="1.984" height="8"/>
                 <rect y="3" width="1.984" height="7"/>
                 <rect x="4" width="2" height="10"/>
@@ -51,8 +50,7 @@
           </li>
           <li class="user-navigation__basket">
             <a class=" main-text" href="#" aria-label="Корзина">
-              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
                 <g>
                   <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
                   <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
@@ -119,7 +117,7 @@
               <p class="advertising__big-number big-number">01</p>
               <p class="advertising__title big-title ">Делай селфи,<br>как Бен Стиллер!</p>
               <p class="advertising__text main-text main-text--black main-text--grey">
-                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="advertising__details crossed-out" href="#" aria-label="Самая длинная селфи-палка">
@@ -153,7 +151,7 @@
               <p class="advertising__big-number big-number">02</p>
               <p class="advertising__title big-title">Худеем<br>правильно!</p>
               <p class="advertising__text  main-text main-text--black main-text--grey">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.
               </p>
               <a class="advertising__details crossed-out" href="#" aria-label="Фитнес-браслеты">
@@ -182,7 +180,7 @@
               <p class="advertising__big-number big-number">03</p>
               <p class="advertising__title big-title">Пархает как бабочка, жалит как пчела!</p>
               <p class="advertising__text main-text main-text--black main-text--grey">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                Этот обычный, на первый взгляд, квадрокоптер оснащен 
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a class="advertising__details crossed-out" href="item3.html" aria-label="Квадрокоптеры">
@@ -227,7 +225,7 @@
               <div class="index-menu__background index-menu__background--bottom">
                 <img class="index-menu__image" src="img/png/monopods.png" width="86" height="117" alt="Монопод">
               </div>
-              Моноподы<br> для селфи
+              Моноподы для селфи
             </a>
           </li>
           <li class="index-menu__item">
@@ -279,15 +277,15 @@
             <li class="service__delivery">
               <p class="service__title big-title">Доставка</p>
               <p class="service__text main-text main-text--grey">
-                Мы с удовольствием доставим ваш товар прямо к вашему<br>
-                 подъезду совершенно бесплатно! Ведь мы неплохо <br>
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                 подъезду совершенно бесплатно! Ведь мы неплохо 
                 заработаем, поднимая его на ваш этаж.
               </p>
             </li>
             <li class="service__garanty text-link">
               <p class="service__title big-title">Гарантия</p>
               <p class="service__text main-text main-text--grey">
-                Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                Если из-за возгорания купленного у нас товара у вас сгорит
                 дом — не переживайте, мы выдадим вам новый.<br>
                 Товар, не дом, конечно же.
               </p>              
@@ -295,8 +293,8 @@
             <li class="service__credit text-link">
               <p class="service__title big-title">Кредит</p>
               <p class="service__text main-text main-text--grey">
-                Залезть в долговую яму стало проще! Кредитные <br>
-                консультанты подберут для вас наиболее выгодные <br>
+                Залезть в долговую яму стало проще! Кредитные
+                консультанты подберут для вас наиболее выгодные
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </li>
@@ -337,12 +335,11 @@
         <section class="info__about-us about"> 
           <h2 class="about__title big-title">О нас</h2>
           <p class="about__text1 main-text main-text--grey">
-            Огромный выбор гаджетов не оставит равнодушным гика,<br>
+            Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
           <p class="about__text2 main-text main-text--grey">
-              Мы можем доставить ваш товар в самые отдаленные точки<br>
-              России! DEVICE работает со многими транспортными компаниями:
+              Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="about__companies-list">
             <li class="about__paragraphs"><span class="text-link text-link--small">Деловые Линии</span></li>
@@ -350,7 +347,7 @@
             <li class="about__paragraphs"><span class="text-link text-link--small">ЖелДорЭкспедиция</span></li>
           </ul>
           <a href="#" class="about__detail crossed-out">
-            <span class="text-link text-link--specing-uppercase">Подробне о нас</span>
+            <span class="text-link text-link--specing-uppercase">Подробнее о нас</span>
           </a>
         </section>
 
@@ -358,10 +355,12 @@
         <section class="info__contacts contacts">  
           <h2 class="contacts__title big-title">Контакты</h2>
           <p class="contacts__text main-text main-text--grey">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
             проверить работоспоссобность покупки. Всякое бывает.
           </p>
-          <img src="img/map.jpg" class="contacts__img" width="560" height="223" alt="Карта">
+          <a href="#" class="contacts__map">
+            <img src="img/map.jpg" class="contacts__img" width="560" height="223" alt="Карта">
+          </a>
           <a href="#" class="contacts__write-to-us crossed-out">
             <span class="text-link text-link--specing-uppercase">Напишите нам</span>
           </a>       
