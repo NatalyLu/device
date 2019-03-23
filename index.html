@@ -363,12 +363,12 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
             проверить работоспоссобность покупки. Всякое бывает.
           </p>
-          <a href="#" class="contacts__map">
+          <a href="#" class="contacts__map contacts__map-button">
             <img src="img/map.jpg" class="contacts__img" width="560" height="223" alt="Карта">
           </a>
-          <a href="#" class="contacts__write-to-us crossed-out text-link text-link--specing-uppercase">
+          <button href="#" class="contacts__write-to-us crossed-out text-link text-link--specing-uppercase">
             Напишите нам
-          </a>       
+          </button>       
         </section>
       </section>
     </main>
@@ -486,9 +486,10 @@
     <!------------------------------------------->
     <!--------------- Поп-апы ------------------->
     <!------------------------------------------->
+
     <!------------ Отправка письма -------------->
     <section class="modal-letter">
-      <button class="modal-letter__close" type="button">
+      <button class="modal__close modal-letter__close" type="button">
         Закрыть
       </button>
       <form class="modal-letter__message" method="POST" action="#">
@@ -509,14 +510,111 @@
         <span class="crossed-out text-link text-link--specing-uppercase">Отправить</span>
       </button>
     </section>
+
+    <!------------ Карта -------------->
     <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- <form class="map" method="POST" action="#"> -->
-      <button class="modal-letter__close" type="button">Закрыть</button>
+      <button class="modal__close modal__close-map" type="button">Закрыть</button>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abe0e9aae6d0743a0b0b2965c9f9de9473d699b3b98bec1f0745eff26ed31994e&amp;width=960&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
       </script>
       <!-- </form> -->
     </section>
+    <!------------------------------------------->
+    <!--------------- Скрипты ------------------->
+    <!------------------------------------------->
+    <script>
+
+      //------------- Напишите нам --------------//
+      var link = document.querySelector(".contacts__write-to-us");
+      var popup = document.querySelector(".modal-letter");
+      var close = popup.querySelector(".modal-letter__close");
+      var form = popup.querySelector("form");
+
+      var name = popup.querySelector("[name=person-name]");
+      var pemail = popup.querySelector("[name=person-email]");
+      var ptext = popup.querySelector("[name=person-text]");
+
+      var isStorageSupport = true;
+      var storage_name = "";
+      var storage_email = "";
+      
+      try {
+        storage_name = localStorage.getItem("name");
+        storage_email = localStorage.getItem("pemail");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        if (storage){
+          name.value = storage_name;
+          pemail.value = storage_email;
+          // ptext.value = storage;
+          pemail.focus();
+        } else{
+          name.focus();
+        }
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!login.value || !pemail.value || !ptext.value) {
+          evt.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          // console.log("Нужно ввести логин и пароль");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("name", name.value);
+            localStorage.setItem("pemail", pemail.value);
+            // localStorage.setItem("ptext", ptext.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+      
+      //------------- Карта ---------------//
+      var mapLink = document.querySelector(".contacts__map-button");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal__close-map");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        evt.preventDefault();
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
 

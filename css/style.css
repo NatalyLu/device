@@ -738,6 +738,8 @@ background-color: #f0c52e;
   margin-right: 2px;
 }
 .contacts__write-to-us{
+  border: none;
+  background: none;
   position: relative;
   width: 260px;
   line-height: 40px;
@@ -1423,6 +1425,46 @@ opacity: 0.5;
 }
 
 /*********************
+  MODAL
+**********************/
+.modal__close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: #f0c52e;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 2;
+  cursor: pointer;
+}
+.modal__close:hover{
+  opacity: 1;
+}
+.modal__close:active{
+  opacity: 0.2;
+}
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  top: 45%;
+  left: 22%;
+  background-color: white;
+}
+.modal__close::before {
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+/*********************
   MODAL-LETTER
 **********************/
 .modal-letter {
@@ -1437,42 +1479,6 @@ opacity: 0.5;
   background-color: white;
   z-index: 1;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.modal-letter__close{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 55px;
-  height: 55px;
-  font-size: 0;
-  background-color: #f0c52e;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0.5;
-  z-index: 2;
-  cursor: pointer;
-}
-.modal-letter__close:hover{
-  opacity: 1;
-}
-.modal-letter__close:active{
-  opacity: 0.2;
-}
-.modal-letter__close::before,
-.modal-letter__close::after {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 3px;
-  top: 45%;
-  left: 22%;
-  background-color: white;
-}
-.modal-letter__close::before {
-  transform: rotate(45deg);
-}
-.modal-letter__close::after {
-  transform: rotate(-45deg);
 }
 .modal-letter__message{
   display: flex;
@@ -1493,6 +1499,7 @@ opacity: 0.5;
   width: 300px;
   padding: 10px 15px;
   padding-right: 40px;
+  margin-top: 10px;
 }
 .modal-letter__message input[type="text"]:hover,
 .modal-letter__message input[type="email"]:hover,
@@ -1552,4 +1559,48 @@ opacity: 0.5;
   border: 1px solid white;
   outline: 2px solid #d9d9d9;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*********************
+  MODAL-SHOW
+**********************/
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
