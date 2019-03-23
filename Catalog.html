@@ -103,7 +103,7 @@
     <!-------------- Содержимое ---------------->
     <!------------------------------------------>
     <main class="monopods-main">
-      <section class="manopods block-center">
+      <section class="monopods block-center">
         <h1 class="monopods__title text-link">Моноподы для селфи</h1>
         <ul class="monopods__breadcrumbs">
           <li class="breadcrumbs__main">
@@ -159,18 +159,18 @@
                 <input name="pink" type="checkbox" id="check-pink">
                 <label for="check-pink">Розовый</label>
               </div>
-              </fieldset>
+            </fieldset>
             
             <fieldset class="bluetooth-form main-text">
               <legend class="bluetooth-form__legend text-link">Bluetooth</legend>
-                <div class="bluetooth-form__radio">
-                  <input type="radio" name="yes-no" value="yes" id="radio-yes" checked>
-                  <label for="radio-yes">Есть</label>
-                </div>
-                <div class="bluetooth-form__radio">
-                  <input type="radio" name="yes-no" value="no"  id="radio-no"> 
-                  <label for="radio-no">Нет</label>
-                </div>
+              <div class="bluetooth-form__radio">
+                <input type="radio" name="yes-no" value="yes" id="radio-yes" checked>
+                <label for="radio-yes">Есть</label>
+              </div>
+              <div class="bluetooth-form__radio">
+                <input type="radio" name="yes-no" value="no"  id="radio-no"> 
+                <label for="radio-no">Нет</label>
+              </div>
             </fieldset>
             <fieldset class="main-filter__butten-show">
               <button class="butten-show crossed-out text-link text-link--specing-uppercase" type="submit">
@@ -200,14 +200,14 @@
                 </a>
               </div>
               <div class="sort__type-of-sort">
-                <div>
+                <a class="sort__incdic sort__increace" href="#">
                   <input name="type-of-sort-in" type="radio" value="increace" id="increace" >
                   <label for="increace"></label>
-                </div>
-                <div>
+                </a>
+                <a class="sort__incdic sort__dicreace" href="#">
                   <input name="type-of-sort-dic" type="radio" value="dicreace" id="dicreace" checked>
                   <label for="dicreace"></label>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -287,13 +287,16 @@
         </a>
         <ul class="footer-first__user-nav">
           <li class="footer-first__login footer-first__login--after main-text main-text--white">
-            <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-              <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-            </svg>
-            Валентин Петухов
+            <div>
+              <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+              </svg>
+              Валентин Петухов
+            </div>
+            <a href="#" class="main-text">Выйти</a>
           </li>
           <li class="footer-first__compare">
-            <a class="main-text main-text--white" href="compare.html" aria-label="Сравнение товара">
+            <a class="main-text main-text--white" href="#" aria-label="Сравнение товара">
               <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve" fill="#ffc600">
                 <rect x="8" y="2" width="1.984" height="8"/><rect y="3" width="1.984" height="7"/>
                 <rect x="4" width="2" height="10"/>
@@ -302,7 +305,7 @@
             </a>
           </li>
           <li class="footer-first__basket">
-            <a class="main-text main-text--white" href="basket.html" aria-label="Корзина">
+            <a class="main-text main-text--white" href="#" aria-label="Корзина">
               <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve" fill="#ffc600">
                 <g>
                   <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>

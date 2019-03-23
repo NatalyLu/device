@@ -31,7 +31,7 @@
             </form>
           </li>
           <li class="user-navigation__login main-text">
-            <div>
+            <a class="main-text" href="#" aria-label="Вход"></a>
               <svg class="user-navigation__image-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
                 <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
               </svg>
@@ -120,8 +120,8 @@
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <a class="advertising__details crossed-out" href="#" aria-label="Самая длинная селфи-палка">
-                <p class="text-link text-link--specing-uppercase">Подробнее</p>
+              <a class="advertising__details crossed-out text-link text-link--specing-uppercase" href="#" aria-label="Самая длинная селфи-палка">
+                Подробнее
               </a> 
               <form class="form-adv " action="#" method="post">
                 <input type="radio" name="adv" id="form-adv1__var1" value="first-adv" checked><label for="form-adv1__var1"></label>
@@ -154,8 +154,8 @@
                 Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.
               </p>
-              <a class="advertising__details crossed-out" href="#" aria-label="Фитнес-браслеты">
-                <p class="text-link text-link--specing-uppercase">Подробнее</p>
+              <a class="advertising__details crossed-out text-link text-link--specing-uppercase" href="#" aria-label="Фитнес-браслеты">
+                Подробнее
               </a> 
               <form class="form-adv" action="#" method="post">
                 <input type="radio" name="adv" id="form-adv2__var1" value="first-adv" checked><label for="form-adv2__var1"></label>
@@ -183,8 +183,8 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен 
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="advertising__details crossed-out" href="item3.html" aria-label="Квадрокоптеры">
-                <p class="text-link text-link--specing-uppercase">Подробнее</p>
+              <a class="advertising__details crossed-out text-link text-link--specing-uppercase" href="item3.html" aria-label="Квадрокоптеры">
+                Подробнее
               </a> 
               <form class="form-adv " action="#" method="post">
                 <input type="radio" name="adv" id="form-adv3__var1" value="first-adv" checked><label for="form-adv3__var1"></label>
@@ -346,8 +346,8 @@
             <li class="about__paragraphs"><span class="text-link text-link--small">Автотрейдинг</span></li>
             <li class="about__paragraphs"><span class="text-link text-link--small">ЖелДорЭкспедиция</span></li>
           </ul>
-          <a href="#" class="about__detail crossed-out">
-            <span class="text-link text-link--specing-uppercase">Подробнее о нас</span>
+          <a href="#" class="about__detail crossed-out text-link text-link--specing-uppercase">
+            Подробнее о нас
           </a>
         </section>
 
@@ -361,8 +361,8 @@
           <a href="#" class="contacts__map">
             <img src="img/map.jpg" class="contacts__img" width="560" height="223" alt="Карта">
           </a>
-          <a href="#" class="contacts__write-to-us crossed-out">
-            <span class="text-link text-link--specing-uppercase">Напишите нам</span>
+          <a href="#" class="contacts__write-to-us crossed-out text-link text-link--specing-uppercase">
+            Напишите нам
           </a>       
         </section>
       </section>
@@ -381,14 +381,16 @@
           </svg>
         </a>
         <ul class="footer-first__user-nav">
-          <li class="footer-first__login main-text main-text--white">
-            <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-              <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-            </svg>
-            <span>Войти</span>
+          <li class="footer-first__login footer-first__login--index main-text main-text--white">
+            <a class=" main-text main-text--white" href="#" aria-label="Войти">
+              <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+              </svg>
+              <span>Войти</span>
+            </a>
           </li>
           <li class="footer-first__compare">
-            <a class=" main-text main-text--white" href="compare.html" aria-label="Сравнение товара">
+            <a class=" main-text main-text--white" href="#" aria-label="Сравнение товара">
               <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve" fill="#ffc600">
                 <rect x="8" y="2" width="1.984" height="8"/><rect y="3" width="1.984" height="7"/>
                 <rect x="4" width="2" height="10"/>
@@ -397,7 +399,7 @@
             </a>
           </li>
           <li class="footer-first__basket">
-            <a class="main-text main-text--white" href="basket.html" aria-label="Корзина">
+            <a class="main-text main-text--white" href="#" aria-label="Корзина">
               <svg class="footer-first__image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve" fill="#ffc600">
                 <g>
                   <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
