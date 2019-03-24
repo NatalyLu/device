@@ -1579,36 +1579,31 @@ background-color: #f0c52e;
           justify-content: space-evenly;
   width: 80px;
 }
-/* .sort__type-of-sort .sort__incdic label[for=increace]{ */
-  .sort__incdic label{
-  display: none;
-}
-.sort__type-of-sort input[type=radio]{
-  display: none;
-}
-.sort__type-of-sort input[type=radio]+ label::before{
+.sort__type-of-sort .sort__increace::before{
   content: "";
   display: inline-block;
   line-height: 15px;
   border: 6px solid transparent; 
   opacity: 0.2;
-}
-.sort__increace input[type=radio] + label::before{
   border-bottom: 10px solid black;
   vertical-align: 5px;
 }
-.sort__dicreace input[type=radio] + label::before{ 
+.sort__type-of-sort .sort__dicreace::before{
+  content: "";
+  display: inline-block;
+  line-height: 15px;
+  border: 6px solid transparent; 
+  opacity: 1;
   border-top: 10px solid black;
   vertical-align: -8px;
 }
-.sort__incdic:active label::before,
-.sort__type-of-sort input[type=radio]:checked + label::before,
-.sort__incdic:active input[type=radio]:checked + label::before{
-  opacity: 1;
-}
-.sort__incdic:hover label::before,
-.sort__incdic:hover input[type=radio]:checked + label::before{
+.sort__type-of-sort .sort__dicreace:hover::before,
+.sort__type-of-sort .sort__increace:hover::before{
   opacity: 0.5;
+}
+.sort__type-of-sort .sort__dicreace:active::before,
+.sort__type-of-sort .sort__increace:active::before{
+  opacity: 1;
 }
 
 /*********************
