@@ -185,18 +185,18 @@ a{
   margin-right: auto;
 }
 /*****************************/
-.user-navigation__login:hover svg,
 .user-navigation__login:hover .user-navigation__login--in,
-.user-navigation__login a{
+.user-navigation__login .login-out,
+.user-navigation__person:hover{
   opacity: 0.5;
 }
 .user-navigation__login .user-navigation__login--in,
-.user-navigation__login:hover a{
+.user-navigation__login .login-out:hover{
   opacity: 1;
 }
-.user-navigation__login:active svg,
 .user-navigation__login:active .user-navigation__login--in,
-.user-navigation__login a:active{
+.user-navigation__login .login-out:active,
+.user-navigation__person:active{
   opacity: 0.2;
 }
 /*****************************/
@@ -207,14 +207,14 @@ a{
 .user-navigation__login--in .user-navigation__image-svg{
   margin-right: 8px;
 }
-.user-navigation__login--out a{ 
+.user-navigation__login--out .login-out{ 
   margin-left: 18px;
 }
 .user-navigation__login--out .user-navigation__image-svg{
   margin-right: 7px;
 }
-.user-navigation__login--out a,
-.user-navigation__login--out div{
+.user-navigation__login--out .login-out,
+.user-navigation__login--out .user-navigation__person{
   padding-bottom: 6px;
 }
 .user-navigation__compare{
@@ -1030,15 +1030,34 @@ background-color: #f0c52e;
 .footer-first__user-nav{
   margin-top: 4px;
 }
-.footer-first__user-nav span,
-.footer-first__user-nav li:hover svg{
-  opacity: 0.5;
-}
-.footer-first__user-nav svg,
-.footer-first__user-nav li:hover span{
+.footer-first__person:hover span,
+.footer-first__person svg,
+.footer-first__login .login-out:hover{
   opacity: 1;
 }
-.footer-first__user-nav li:active{
+.footer-first__person:hover svg,
+.footer-first__person span,
+.footer-first__login .login-out{
+  opacity: 0.5;
+}
+.footer-first__person:active,
+.footer-first__login .login-out:active{
+  opacity: 0.2;
+}
+.footer-first__compare:hover span,
+.footer-first__basket:hover span,
+.footer-first__compare svg,
+.footer-first__basket svg{
+  opacity: 1;
+}
+.footer-first__compare:hover svg,
+.footer-first__basket:hover svg,
+.footer-first__compare span,
+.footer-first__basket span{
+  opacity: 0.5;
+}
+.footer-first__compare:active,
+.footer-first__basket:active{
   opacity: 0.2;
 }
 .footer-first__image{
@@ -1654,16 +1673,65 @@ opacity: 0.5;
   z-index: -1;
   top: 40%;
   left: 22%;
+  /* outline: 1px solid violet; */
 }
-.list__button{
+
+
+
+/* .advertising__details{
   position: relative;
+  width: 220px;
+  letter-spacing: 3.85px; 
+  padding-left: 4px;
+  text-align: center;
+  vertical-align: middle;
   line-height: 40px;
-  width: 200px;
-  margin-bottom: -10px;
+  z-index: 1;
+} */
+/* .modal-letter__button-send{
+  position: relative;
   border: none;
   background-color: transparent;
+  width: 200px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 100px;
+  margin-top: 30px;
+} */
+/* .list__act a{
+  padding: 0;
+  margin: 0;
+} */
+
+
+.list__button{
+  /* padding: 0; */
+  position: relative;
+  line-height: 20px;
+  width: 200px;
+  margin-bottom: -10px;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* border: none; */
+  /* background-color: transparent; */
+  outline: 1px solid black;
   cursor: pointer;
+  
+/* outline: 1px solid red; */
 }
+.list__button span{
+  position: relative;
+  /* margin:0; */
+  /* line-height: 40px; */
+  width: 200px;
+  text-align: center;
+/* vertical-align: middle; */
+outline: 1px solid red;
+}
+
+
+
 .list__button:hover{
   background-color: #f0c52e;  
 }
@@ -1695,6 +1763,9 @@ opacity: 0.5;
   padding-top: 28px;
   margin: 0 auto;
 }
+
+
+
 .list__item-title{
   padding: 0;
   margin: 0;
