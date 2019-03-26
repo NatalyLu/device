@@ -335,7 +335,7 @@
             </a>
           </li>
           <li class="index-menu__item">
-            <a class="text-link" href=# aria-label="Умные часы">
+            <a class="text-link" href="#" aria-label="Умные часы">
               <div class="index-menu__background">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="98px" viewBox="0 0 56 98" enable-background="new 0 0 56 98" xml:space="preserve">
                   <g>
@@ -421,9 +421,9 @@
         <h2 class="visually-hidden">Услуги</h2>
         <div class="service__content block-center">
           <ul class="service__first-column  text-link text-link--specing-uppercase">
-            <li class="service__main-title crossed-out text-link">Доставка</li>
-            <li class="service__main-title crossed-out text-link">Гарантия</li>
-            <li class="service__main-title crossed-out text-link">Кредит</li>
+            <li class="service__main-title crossed-out"><a class="text-link" href=# aria-label="О доставке">Доставка</a></li>
+            <li class="service__main-title crossed-out"><a class="text-link" href=# aria-label="О гарантии">Гарантия</a></li>
+            <li class="service__main-title crossed-out"><a class="text-link" href=# aria-label="О кредите">Кредит</a></li>
           </ul>
           <ul class="service__second-column">
             <li class="service__delivery">
@@ -652,10 +652,10 @@
           Текст письма:
           <textarea class="main-text opensans-small" name="person-text" rows="7" cols="1200" placeholder="В свободной форме" required></textarea>
         </label>
+        <button class="modal-letter__button-send" type="submit">
+          <span class="crossed-out text-link text-link--specing-uppercase">Отправить</span>
+        </button>
       </form>
-      <button class="modal-letter__button-send" type="submit">
-        <span class="crossed-out text-link text-link--specing-uppercase">Отправить</span>
-      </button>
     </section>
     
     <!------------ Карта -------------->
@@ -663,8 +663,7 @@
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal__close modal__close-map" type="button">Закрыть</button>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad94226ddf099a061ca759648a6d0b18c2ea45185dedb1bc79b66d6be37da6125&amp;width=960&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-      <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad94226ddf099a061ca759648a6d0b18c2ea45185dedb1bc79b66d6be37da6125&amp;source=constructor" width="960" height="500" frameborder="0"></iframe> -->
     </section>
-    <script src="js/popap_scripts.js" ></script>
+    <script src="js/popap_scripts_all.js" ></script>
   </body>
 </html>

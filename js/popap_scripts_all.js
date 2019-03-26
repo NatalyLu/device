@@ -18,7 +18,7 @@
 
   try {
     storage_name = localStorage.getItem("name");
-    storage_email = localStorage.getItem("pemail");
+    storage_pemail = localStorage.getItem("pemail");
   } catch (err) {
     isStorageSupport = false;
   }
@@ -28,8 +28,7 @@
     popup.classList.add("modal-show");
     if (storage){
       name.value = storage_name;
-      pemail.value = storage_email;
-      // ptext.value = storage;
+      pemail.value = storage_pemail;
       pemail.focus();
     } else{
       name.focus();
@@ -43,17 +42,18 @@
   });
 
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !pemail.value || !ptext.value) {
-      evt.preventDefault();
+    if ((name.value="") || (pemail.value="")) {
+      // evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
-      // console.log("Нужно ввести логин и пароль");
+      console.log("Нужно ввести Имя и Ваш e-mail");
     } else {
+      // popup.classList.remove("modal-error");
+      // popup.classList.remove("modal-show");
       if (isStorageSupport) {
         localStorage.setItem("name", name.value);
         localStorage.setItem("pemail", pemail.value);
-        // localStorage.setItem("ptext", ptext.value);
       }
     }
   });
@@ -84,7 +84,6 @@
   });
 
   window.addEventListener("keydown", function (evt) {
-    //evt.preventDefault();
     if (evt.keyCode === 27) {
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
