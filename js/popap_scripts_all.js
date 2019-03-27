@@ -43,14 +43,12 @@
 
   form.addEventListener("submit", function (evt) {
     if ((name.value="") || (pemail.value="")) {
-      // evt.preventDefault();
+      evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
       console.log("Нужно ввести Имя и Ваш e-mail");
     } else {
-      // popup.classList.remove("modal-error");
-      // popup.classList.remove("modal-show");
       if (isStorageSupport) {
         localStorage.setItem("name", name.value);
         localStorage.setItem("pemail", pemail.value);

@@ -6,7 +6,7 @@
     <!-- <link href="css/fonts.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style_all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!------------------------------------------>
@@ -16,50 +16,49 @@
       <nav class="navigation">
         <a class="navigation__logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-            <!-- <defs> <style> .cls-1{fill-rule:evenodd} </style> </defs> -->
             <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
           </svg>
         </a>
-        <ul class="user-navigation">
-          <li class="user-navigation__search main-text">
-            <form class="form-search " action="#" method="post">
-              <svg class="form-search__img user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3zM2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
-              </svg>
-              <input class="form-search__input main-text main-text--grey" type="text" name="search" value="" placeholder="Поиск по сайту">
-              <input class="form-search__button" type="submit" value="Найти">
-            </form>
-          </li>
-          <li class="user-navigation__login main-text">
-            <a class="main-text user-navigation__login--in" href="#" aria-label="Вход">
-              <svg class="user-navigation__image-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
-                <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-              </svg>
-              Войти
-            </a>
-          </li>
-          <li class="user-navigation__compare">
-            <a class="main-text" href="#" aria-label="Сравнение товара">
-              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
-                <rect x="8" y="2" width="1.984" height="8"/>
-                <rect y="3" width="1.984" height="7"/>
-                <rect x="4" width="2" height="10"/>
-              </svg>             
-              Сравнить
-            </a>
-          </li>
-          <li class="user-navigation__basket">
-            <a class=" main-text" href="#" aria-label="Корзина">
-              <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
-                <g>
-                  <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
-                  <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
-                </g>
-              </svg>
-              Корзина
-            </a>
-          </li>
-        </ul>
+        <section class="user-navigation">
+          <form class="user-navigation__search form-search main-text" action="#" method="post">
+            <svg class="form-search__img user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3zM2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+            </svg>
+            <input class="form-search__input main-text main-text--grey" type="text" name="search" value="" placeholder="Поиск по сайту">
+            <input class="form-search__button" type="submit" value="Найти">
+          </form>
+          <ul class="user-navigation__nav">
+            <li class="user-navigation__login main-text">
+              <a class="main-text user-navigation__login--in" href="#" aria-label="Вход">
+                <svg class="user-navigation__image-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                  <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+                </svg>
+                Войти
+              </a>
+            </li>
+            <li class="user-navigation__compare">
+              <a class="main-text" href="#" aria-label="Сравнение товара">
+                <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                  <rect x="8" y="2" width="1.984" height="8"/>
+                  <rect y="3" width="1.984" height="7"/>
+                  <rect x="4" width="2" height="10"/>
+                </svg>             
+                Сравнить
+              </a>
+            </li>
+            <li class="user-navigation__basket">
+              <a class=" main-text" href="#" aria-label="Корзина">
+                <svg class="user-navigation__image-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                  <g>
+                    <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+                    <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+                  </g>
+                </svg>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </section>
         <ul class="site-navigation site-navigation--bottom">
           <li class="site-navigation__catalog">
             <a href="catalog.html" class="text-link text-link--specing-uppercase">
@@ -165,7 +164,7 @@
                   <li class="slider__control-item"><a href="#" aria-label="2 Слайд"></a></li>
                   <li class="slider__control-item"><a href="#" aria-label="3 Слайд"></a></li>
                 </ul>  
-            </div>
+              </div>
               <table class="advertising__table">
                 <tr class="advertising__table-row1 gilroy-slim">
                   <td>48 часов</td>
@@ -229,7 +228,6 @@
                     <path fill="#363636" d="M67.17,4.483c0-5.08-4.232-4.459-4.232-4.459S5.832,4.738,2.838,5.145S0.001,9.532,0.001,9.532 S0,42.069,0,45.812s2.599,3.753,2.599,3.753l16.477,1.403L27.212,39.3c0,0,1.109-1.828,2.505-1.828 c1.397,0,2.432,1.861,2.432,1.861l9.061,13.521c0,0,18.895,1.909,22.521,1.909c3.626-0.001,3.439-5.024,3.439-5.024 S67.17,9.563,67.17,4.483z M12.982,37.192c-3.698,0-6.696-4.601-6.696-10.275s2.998-10.275,6.696-10.275 c3.698,0,6.696,4.601,6.696,10.275S16.68,37.192,12.982,37.192z M49.14,38.618c-4.662,0-8.441-5.239-8.441-11.701 c0-6.463,3.78-11.702,8.441-11.702c4.662,0,8.442,5.239,8.442,11.702C57.582,33.379,53.802,38.618,49.14,38.618z"/>
                   </g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/glasses.png" width="97" height="55" alt="Очки виртуальной реальности"> -->
               </div>
               Виртуальная реальность
             </a>
@@ -245,7 +243,6 @@
                   </g>
                   <g></g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/monopods.png" width="86" height="117" alt="Монопод"> -->
               </div>
               Моноподы<br> для селфи
             </a>
@@ -267,7 +264,6 @@
                     <circle fill="#363636" cx="39.828" cy="45.906" r="1.435"/>
                   </g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/camera.png" width="71" height="87" alt="Камера"> -->
               </div>
               Экшн-камеры
             </a>
@@ -329,7 +325,6 @@
                     c-0.867,0-1.569-0.704-1.569-1.57C20.694,18.036,21.396,17.333,22.263,17.333z"/>
                   </g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/fit-band.png" width="107" height="65" alt="Браслет"> -->
               </div>
               Фитнес-браслеты
             </a>
@@ -357,7 +352,6 @@
                       h26.032c1.684,0,3.266-1.362,3.517-3.026c0-0.001,0-0.001,0-0.002l1.615-10.767C44.765,83.354,44.176,82.671,43.333,82.671z"/>
                   </g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/watch.png" width="56" height="98" alt="Часы"> -->
               </div>
               Умные часы
             </a>
@@ -407,7 +401,6 @@
                       C1160.527,5120.253,1150.459,5120.253,1127.764,5117.167z"/>
                     </g>
                 </svg>
-                <!-- <img class="index-menu__image" src="img/png/quadcopter.png" width="132" height="69" alt="Квадрокоптер"> -->
               </div>
               Квадрокоптеры
             </a>
@@ -513,7 +506,7 @@
           <a  class="contacts__map contacts__map-button" href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&sll=44.005986%2C56.326887&sspn=0.745697%2C0.241873&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2015&z=16">
             <img src="img/map.jpg" class="contacts__img" width="560" height="223" alt="Карта">
           </a>
-          <a href="#" class="contacts__write-to-us crossed-out text-link text-link--specing-uppercase">
+          <a href="link-to-popup" class="contacts__write-to-us crossed-out text-link text-link--specing-uppercase">
             Напишите нам
           </a>       
         </section>
@@ -664,6 +657,6 @@
       <button class="modal__close modal__close-map" type="button">Закрыть</button>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad94226ddf099a061ca759648a6d0b18c2ea45185dedb1bc79b66d6be37da6125&amp;width=960&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
-    <script src="js/popap_scripts_all.js" ></script>
+    <script src="js/popap_scripts.js"></script>
   </body>
 </html>
